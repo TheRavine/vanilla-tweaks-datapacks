@@ -1,7 +1,6 @@
 execute if data entity @s HandItems[0].tag.gravesData.items[{tag:{Enchantments:[{id:"minecraft:vanishing_curse"}]}}] run function graves:remove_vanishing_item
 execute if score #xp graves.config matches 1 if score #xp graves.dummy matches 1.. run function graves:store_xp
-data modify entity @s HandItems[1].tag.gravesData.uuidMost set from entity @a[tag=graves.player,limit=1] UUIDMost
-data modify entity @s HandItems[1].tag.gravesData.uuidLeast set from entity @a[tag=graves.player,limit=1] UUIDLeast
+data modify entity @s HandItems[1].tag.gravesData.uuid set from entity @a[tag=graves.player,limit=1] UUID
 execute store result entity @s HandItems[1].tag.gravesData.id int 1 run scoreboard players get #id graves.dummy
 scoreboard players operation @s graves.id = #id graves.dummy
 data modify entity @s ArmorItems[0] set from entity @s HandItems[1]
@@ -21,4 +20,4 @@ execute store result storage graves:storage players[0].graves[-1].x int 1 run da
 execute store result storage graves:storage players[0].graves[-1].y int 1 run data get entity @s Pos[1]
 execute store result storage graves:storage players[0].graves[-1].z int 1 run data get entity @s Pos[2]
 execute at @s run function graves:create_model
-execute if score #locating graves.config matches 1 as @a[tag=graves.player] run function graves:display_grave_location
+execute if score #locating graves.config matches 1 as @a[tag=graves.player] run tellraw @s [{"text":"Your last grave is at ","color":"gold"},{"text":"(","color":"yellow"},{"storage":"graves:storage","nbt":"players[0].graves[-1].x","color":"yellow"},{"text":", ","color":"yellow"},{"storage":"graves:storage","nbt":"players[0].graves[-1].y","color":"yellow"},{"text":", ","color":"yellow"},{"storage":"graves:storage","nbt":"players[0].graves[-1].z","color":"yellow"},{"text":")","color":"yellow"},{"text":" in ","color":"gold"},{"storage":"graves:storage","nbt":"players[0].graves[-1].dim","color":"gold"},{"text":".","color":"gold"}]
