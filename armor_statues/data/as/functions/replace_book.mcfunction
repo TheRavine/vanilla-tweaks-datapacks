@@ -3,6 +3,9 @@
 # Called by:	as:tick
 # Entity @s:	Player
 #
-# Replaces the written book from the players mainhand
+# Replaces the written book from the players inventory
 #
-loot replace entity @s weapon.mainhand loot as:book
+execute store result score #as_success as_help run clear @s minecraft:written_book{title:"Statues"} 1
+execute if score #as_success as_help matches 1.. run function as:give
+
+tag @s remove as_craft

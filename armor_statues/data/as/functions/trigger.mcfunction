@@ -62,8 +62,12 @@ execute if entity @s[scores={as_trigger=135}] as @e[type=armor_stand,tag=as_sele
 #
 # Auto alignment
 #
-execute if entity @s[scores={as_trigger=151..154}] as @e[type=armor_stand,tag=as_selected] run function as:trigger/align
-execute if entity @s[scores={as_trigger=155..156}] as @e[type=armor_stand,tag=as_selected] run function as:trigger/rack
+# non-small armor stands
+execute if entity @s[scores={as_trigger=151..154}] as @e[type=armor_stand,tag=as_selected,nbt={Small:0b}] run function as:trigger/align
+execute if entity @s[scores={as_trigger=155..156}] as @e[type=armor_stand,tag=as_selected,nbt={Small:0b}] run function as:trigger/rack
+# small armor stands
+execute if entity @s[scores={as_trigger=151..154}] as @e[type=armor_stand,tag=as_selected,nbt={Small:1b}] run function as:trigger/align_small
+execute if entity @s[scores={as_trigger=155..156}] as @e[type=armor_stand,tag=as_selected,nbt={Small:1b}] run function as:trigger/rack_small
 #
 # Exchange slots
 #
@@ -77,6 +81,10 @@ execute if entity @s[scores={as_trigger=1005},predicate=as:savedpose] unless ent
 # Lock and seal
 #
 execute if entity @s[scores={as_trigger=1000..1003}] run function as:trigger/lock
+#
+# Records the last editor of the armor stand
+#
+execute unless entity @s[scores={as_trigger=999}] unless entity @s[scores={as_trigger=999}] as @e[type=armor_stand,tag=as_selected] run function as:trigger/last_edit
 #
 # Reset armor stand's trigger score and remove selected tag from player and armor stand
 #

@@ -11,46 +11,48 @@
 		    {
 			  "function": "minecraft:set_nbt",
 			  "tag": "{
-			    title:\"Statues V2.6\",
+			    title:\"Statues V2.7\",
 				author:\"Stick God\",
 				datapack:\"ArmourStatuesV2\",
 				pages:[
-				  \'[
+				  '[
 					{\"text\":\"      \",\"color\":\"white\"},
-					{\"text\":\"Statues V2.6\",\"color\":\"dark_blue\"},
-					{\"text\":\"     \",\"color\":\"white\"},
-					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"This book allows you to apply basic settings to an armor stand. Clicking the coloured links will adjust the closest armor stand within three blocks.\",\"color\":\"yellow\"}]}},
+					{\"text\":\"Statues V2.7\",\"color\":\"dark_blue\"},
+					{\"text\":\"    \",\"color\":\"white\"},
+					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"This book allows you to apply basic settings to an armor stand. Clicking the coloured links will adjust the closest armor stand within three blocks.\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\\\\n  Table of Contents\",\"color\":\"black\"},
 					{\"text\":\"\\\\n\",\"color\":\"white\"},
 					
 					{\"text\":\"\\\\nStyles\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":2}},
 					{\"text\":\"     \",\"color\":\"white\"},
-					{\"text\":\"Pose Adjust\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":6}},
+					{\"text\":\"Auto Align\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":7}},
 					
 					{\"text\":\"\\\\nNudge\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":3}},
 					{\"text\":\"    ..\",\"color\":\"white\"},
-					{\"text\":\"Auto Align\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":7}},
+					{\"text\":\"Swap Slots\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":7}},
 					
 					{\"text\":\"\\\\nRotation\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":4}},
 					{\"text\":\"  .\",\"color\":\"white\"},
-					{\"text\":\"Swap Slots\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":7}},
+					{\"text\":\"Mirror/Flip\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":8}},
 					
 					{\"text\":\"\\\\nPointing\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":4}},
 					{\"text\":\"   \",\"color\":\"white\"},
-					{\"text\":\"Mirror/Flip\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":8}},
+					{\"text\":\"Utilities\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":8}},
 					
 					{\"text\":\"\\\\nPresets\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":5}},
 					{\"text\":\"  .\",\"color\":\"white\"},
-					{\"text\":\"Utilities\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":8}},
+					{\"text\":\"Item Frames\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":9}},
 					
-					{\"text\":\"\\\\n       .\",\"color\":\"white\"},
-					{\"text\":\"Credits\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":9}},
+					{\"text\":\"\\\\n\",\"color\":\"white\"},
+					{\"text\":\"Pose Adjust\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":6}},
+					{\"text\":\"   \",\"color\":\"white\"},
+					{\"text\":\"Credits\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":10}},
 					{\"text\":\"\\\\n\",\"color\":\"white\"},
 					{\"text\":\"\\\\n\",\"color\":\"white\"},
 					{\"text\":\"\\\\n      \",\"color\":\"white\"},
 					{\"text\":\"Check Target\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 999\"}}
-				  ]\',
-				  \'[
+				  ]',
+				  '[
 					\"\",
 					{\"text\":\"\\\\u00ab\",\"color\":\"light_purple\",\"clickEvent\":{\"action\":\"change_page\",\"value\":1}},
 					{\"text\":\"   \",\"color\":\"white\"},
@@ -85,14 +87,14 @@
 					{\"text\":\"Yes\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 11\"}},
 					{\"text\":\" / \",\"color\":\"black\"},
 					{\"text\":\"No\",\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 12\"}}
-				  ]\',
-				  \'[
+				  ]',
+				  '[
 				    \"\",
 					{\"text\":\"\\\\u00ab\",\"color\":\"light_purple\",\"clickEvent\":{\"action\":\"change_page\",\"value\":1}},
 					{\"text\":\"   .\",\"color\":\"white\"},
 					{\"text\":\"Nudge Position\",\"color\":\"dark_blue\"},
-					{\"text\":\"   \",\"color\":\"white\"},
-					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Turn gravity off before nudging the Y-position.\\\\n\\\\nRelative Aligned nudging moves the armor stand relative to the player\\'s position and aligned to the block grid.  (X=Left/Right, Z=Away/Towards)\\\\n\\\\nRelative Aligned nudging moves the armor stand relative to the player\\'s exact position.  (X=Left/Right, Y=Above/Below, Z=Away/Towards)\\\\n\\\\nNudges are in 16ths of a block to align with the pixels of the block textures.\",\"color\":\"yellow\"}]}},
+					{\"text\":\"  \",\"color\":\"white\"},
+					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Turn gravity off before nudging the Y-position.\\\\n\\\\nRelative Aligned nudging moves the armor stand relative to the player\\'s position and aligned to the block grid.  (X=Left/Right, Z=Away/Towards)\\\\n\\\\nRelative Aligned nudging moves the armor stand relative to the player\\'s exact position.  (X=Left/Right, Y=Above/Below, Z=Away/Towards)\\\\n\\\\nNudges are in 16ths of a block to align with the pixels of the block textures.\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\\\\nX:  \",\"color\":\"black\"},
 					{\"text\":\"-8\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 40\"}},
 					{\"text\":\" \",\"color\":\"white\"},
@@ -193,14 +195,14 @@
 					{\"text\":\" \",\"color\":\"white\"},
 					{\"text\":\"+8\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 1129\"}},
 					\"\"
-				  ]\',
-				  \'[
+				  ]',
+				  '[
 				    \"\",
 					{\"text\":\"\\\\u00ab\",\"color\":\"light_purple\",\"clickEvent\":{\"action\":\"change_page\",\"value\":1}},
 					{\"text\":\"   \",\"color\":\"white\"},
 					{\"text\":\"Adjust Rotation\",\"color\":\"dark_blue\"},
-					{\"text\":\"  \",\"color\":\"white\"},
-					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"The angle step (default 15\\\\u00b0) is used for both the stand rotation and the pose adjustments.\\\\n\\\\nToward and Away turn the armor stand to face toward or away from you.\",\"color\":\"yellow\"}]}},
+					{\"text\":\" \",\"color\":\"white\"},
+					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"The angle step (default 15\\\\u00b0) is used for both the stand rotation and the pose adjustments.\\\\n\\\\nToward and Away turn the armor stand to face toward or away from you.\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\\\\n  \",\"color\":\"white\"},
 					{\"text\":\"<<\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 56\"}},
 					{\"text\":\"  \",\"color\":\"white\"},
@@ -220,7 +222,7 @@
 					{\"text\":\"\\\\n\\\\n         \",\"color\":\"white\"},
 					{\"text\":\"Pointing\",\"color\":\"dark_blue\"},
 					{\"text\":\"       \",\"color\":\"white\"},
-					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Points selected appendage at head or feet.\",\"color\":\"yellow\"}]}},
+					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Points selected appendage at head or feet.\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\\\\n\",\"color\":\"white\"},
 					{\"text\":\"Head:\",\"color\":\"black\"},
 					{\"text\":\"    .\",\"color\":\"white\"},
@@ -257,14 +259,14 @@
 					{\"text\":\"Head\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 1165\"}},
 					{\"text\":\"   \",\"color\":\"white\"},
 					{\"text\":\"Feet\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 1171\"}}
-				  ]\',
-				  \'[
+				  ]',
+				  '[
 				    \"\",
 					{\"text\":\"\\\\u00ab\",\"color\":\"light_purple\",\"clickEvent\":{\"action\":\"change_page\",\"value\":1}},
 					{\"text\":\"   \",\"color\":\"white\"},
 					{\"text\":\"Pose Presets\",\"color\":\"dark_blue\"},
 					{\"text\":\"    \",\"color\":\"white\"},
-					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"The Death pose is for a figure lying down and requires a separate armor stand for the legs.\\\\n\\\\nRandomized creates a completely unique randomized custom pose.\\\\n\\\\nThe Block and Item presets are designed to hold blocks and items in line with the world grid.\",\"color\":\"yellow\"}]}},
+					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"The Death pose is for a figure lying down and requires a separate armor stand for the legs.\\\\n\\\\nRandomized creates a completely unique randomized custom pose.\\\\n\\\\nThe Block and Item presets are designed to hold blocks and items in line with the world grid.\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\\\\nAttention\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 20\"}},
 					{\"text\":\"    .\",\"color\":\"white\"},
 					{\"text\":\"Confident\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 30\"}},
@@ -300,14 +302,14 @@
 					{\"text\":\"\\\\nBlock\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 141\"}},
 					{\"text\":\"        ..\",\"color\":\"white\"},
 					{\"text\":\"Item\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 142\"}}
-				  ]\',
-				  \'[
+				  ]',
+				  '[
 				    \"\",
 					{\"text\":\"\\\\u00ab\",\"color\":\"light_purple\",\"clickEvent\":{\"action\":\"change_page\",\"value\":1}},
 					{\"text\":\" .\",\"color\":\"white\"},
 					{\"text\":\"Pose Adjustment\",\"color\":\"dark_blue\"},
-					{\"text\":\"  \",\"color\":\"white\"},
-					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"The angle step set for adjusting the stand rotation is also used for the pose adjustments.\",\"color\":\"yellow\"}]}},
+					{\"text\":\" \",\"color\":\"white\"},
+					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"The angle step set for adjusting the stand rotation is also used for the pose adjustments.\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\\\\n          .\",\"color\":\"white\"},
 					{\"text\":\"X\",\"color\":\"black\"},
 					{\"text\":\"     .\",\"color\":\"white\"},
@@ -392,28 +394,28 @@
 					{\"text\":\"-\",\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 94\"}},
 					{\"text\":\" .\",\"color\":\"white\"},
 					{\"text\":\"+\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 95\"}}
-				  ]\',
-				  \'[
+				  ]',
+				  '[
 				    \"\",
 					{\"text\":\"\\\\u00ab\",\"color\":\"light_purple\",\"clickEvent\":{\"action\":\"change_page\",\"value\":1}},
 					{\"text\":\"    \",\"color\":\"white\"},
 					{\"text\":\"Auto Alignment\",\"color\":\"dark_blue\"},
-					{\"text\":\"   \",\"color\":\"white\"},
-					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Pose and position an armor stand to align a held block or item with an adjacent block.\",\"color\":\"yellow\"}]}},
+					{\"text\":\"  \",\"color\":\"white\"},
+					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Pose and position an armor stand to align a held block or item with an adjacent block.\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\\\\n\",\"color\":\"white\"},
-					{\"text\":\"Block on surface\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 151\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Align an armor stand placed on a surface so that a block held by it appears on the surface.\",\"color\":\"yellow\"}]}},
+					{\"text\":\"Block on surface\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 151\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Align an armor stand placed on a surface so that a block held by it appears on the surface.\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\\\\n\",\"color\":\"white\"},
-					{\"text\":\"Item on surface\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 152\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Align an armor stand placed on a surface so that an item held by it appears upright on the surface.\",\"color\":\"yellow\"}]}},
+					{\"text\":\"Item on surface\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 152\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Align an armor stand placed on a surface so that an item held by it appears upright on the surface.\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\",\"color\":\"white\"},
-					{\"text\":\"Item flat on surface\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 153\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Align an armor stand placed on a surface so that a non-tool item held by it appears flat on the surface.\",\"color\":\"yellow\"}]}},
+					{\"text\":\"Item flat on surface\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 153\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Align an armor stand placed on a surface so that a non-tool item held by it appears flat on the surface.\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\",\"color\":\"white\"},
-					{\"text\":\"Tool flat on surface\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 154\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Align an armor stand placed on a surface so that a tool held by it appears flat on the surface.\",\"color\":\"yellow\"}]}},
+					{\"text\":\"Tool flat on surface\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 154\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Align an armor stand placed on a surface so that a tool held by it appears flat on the surface.\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\\\\n\",\"color\":\"white\"},
-					{\"text\":\"Tool rack\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 155\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Align an armor stand with a tripwire hook on the wall above it so that a tool held by it appears to be hanging up.\\\\n\\\\nAlso locks the armor stand and disables all slots except the mainhand.\",\"color\":\"yellow\"}]}},
+					{\"text\":\"Tool rack\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 155\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Align an armor stand with a tripwire hook on the wall above it so that a tool held by it appears to be hanging up.\\\\n\\\\nAlso locks the armor stand and disables all slots except the mainhand.\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\\\\n       \",\"color\":\"white\"},
 					{\"text\":\"Swap Slots\",\"color\":\"dark_blue\"},
 					{\"text\":\"     \",\"color\":\"white\"},
-					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Swap items between equipment slots\",\"color\":\"yellow\"}]}},
+					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Swap items between equipment slots\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\\\\n.\",\"color\":\"white\"},
 					{\"text\":\"Mainhand \",\"color\":\"black\"},
 					{\"text\":\"<->\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 161\"}},
@@ -422,14 +424,14 @@
 					{\"text\":\"Mainhand \",\"color\":\"black\"},
 					{\"text\":\"<->\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 162\"}},
 					{\"text\":\" Head\",\"color\":\"black\"}
-				  ]\',
-				  \'[
+				  ]',
+				  '[
 				    \"\",
 					{\"text\":\"\\\\u00ab\",\"color\":\"light_purple\",\"clickEvent\":{\"action\":\"change_page\",\"value\":1}},
 					{\"text\":\".\",\"color\":\"white\"},
 					{\"text\":\"Pose Mirror & Flip\",\"color\":\"dark_blue\"},
 					{\"text\":\" \",\"color\":\"white\"},
-					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Mirroring copies the arm or leg pose from left to right or vice versa. Flipping reverses the armor stand\\'s pose entirely.\",\"color\":\"yellow\"}]}},
+					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Mirroring copies the arm or leg pose from left to right or vice versa. Flipping reverses the armor stand\\'s pose entirely.\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\\\\n \",\"color\":\"white\"},
 					{\"text\":\"Mirror Arms\",\"color\":\"black\"},
 					{\"text\":\"  \",\"color\":\"white\"},
@@ -447,7 +449,7 @@
 					{\"text\":\"\\\\n\\\\n         \",\"color\":\"white\"},
 					{\"text\":\"Utilities\",\"color\":\"dark_blue\"},
 					{\"text\":\"        \",\"color\":\"white\"},
-					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Copying an armor stand stores it\\'s settings and pose in the book and these can then be pasted into another armor stand. The book must be the selected item in your mainhand or offhand for this to work.\\\\n\\\\nLocking an armor stand prevents it from being changed using the book and disables interaction with the equipment slots.\\\\n\\\\nSealing an armor stand, which is only available in creative mode, does the same and in addition makes it invulnerable\",\"color\":\"yellow\"}]}},
+					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Copying an armor stand stores it\\'s settings and pose in the book and these can then be pasted into another armor stand. The book must be the selected item in your mainhand or offhand for this to work.\\\\n\\\\nLocking an armor stand prevents it from being changed using the book and disables interaction with the equipment slots.\\\\n\\\\nSealing an armor stand, which is only available in creative mode, does the same and in addition makes it invulnerable\",\"color\":\"yellow\"}]}},
 					{\"text\":\"\\\\n\\\\n     .\",\"color\":\"white\"},
 					{\"text\":\"Copy\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 1004\"}},
 					{\"text\":\" / \",\"color\":\"black\"},
@@ -460,28 +462,49 @@
 					{\"text\":\"Seal\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function as:sealing/seal\"}},
 					{\"text\":\" / \",\"color\":\"black\"},
 					{\"text\":\"Unseal\",\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function as:sealing/unseal\"}}
-				  ]\',
-				  \'[
+				  ]',
+				  '[
+				    \"\",
+					{\"text\":\"\\\\u00ab\",\"color\":\"light_purple\",\"clickEvent\":{\"action\":\"change_page\",\"value\":1}},
+					{\"text\":\"    \",\"color\":\"white\"},
+					{\"text\":\"Item Frames\",\"color\":\"dark_blue\"},
+					{\"text\":\"     \",\"color\":\"white\"},
+					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"To make an item frame invisible it must be one block in front of the players eyes and have an item in the frame.\\\\nAlternatively you can also enter:\\\\n/trigger if_invisible\\\\nTo make the item frame visible remove its item.\\\\n\\\\nMust be in creative to make item frame Fixed, or have it enabled from the admin menu.\",\"color\":\"yellow\"}]}},
+					{\"text\":\"\\\\n\\\\n\",\"color\":\"white\"},
+					{\"text\":\"Invisible item frame\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger if_invisible set 1\"}},
+					{\"text\":\"\\\\n\\\\n\",\"color\":\"white\"},
+					{\"text\":\"Fixed Item Frame:\",\"color\":\"black\"},
+					{\"text\":\"\\\\n        \",\"color\":\"white\"},
+					{\"text\":\"Yes\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger if_invisible set 2\"}},
+					{\"text\":\" / \",\"color\":\"black\"},
+					{\"text\":\"No\",\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger if_invisible set 3\"}},
+					
+					{\"text\":\"\",\"color\":\"white\"}
+				  ]',
+				  '[
 				    \"\",
 					{\"text\":\"\\\\u00ab\",\"color\":\"light_purple\",\"clickEvent\":{\"action\":\"change_page\",\"value\":1}},
 					{\"text\":\"        \",\"color\":\"white\"},
 					{\"text\":\"Credits\",\"color\":\"dark_blue\"},
+					{\"text\":\"      \",\"color\":\"white\"},
+					{\"text\":\"\\\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Click on names for links.\",\"color\":\"yellow\"}]}},
+					
 					{\"text\":\"\\\\n\\\\n  Original concept by\",\"color\":\"black\"},
 					{\"text\":\"\\\\n       \",\"color\":\"white\"},
-					{\"text\":\"Phssthpok\",\"color\":\"dark_purple\",\"bold\":\"true\"},
-					{\"text\":\"\\\\n\\\\n     \",\"color\":\"white\"},
-					{\"text\":\"Vanilla Tweaks\",\"color\":\"black\"},
-					{\"text\":\"\\\\n     \",\"color\":\"white\"},
+					{\"text\":\"Phssthpok\",\"color\":\"#87325d\",\"bold\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://twitter.com/MCPhssthpok\"}},
+					{\"text\":\"\\\\n\\\\n      \",\"color\":\"white\"},
+					{\"text\":\"Vanilla Tweaks\",\"color\":\"#81bfdc\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://vanillatweaks.net/\"}},
+					{\"text\":\"\\\\n      \",\"color\":\"white\"},
 					{\"text\":\"integration by\",\"color\":\"black\"},
 					{\"text\":\"\\\\n       \",\"color\":\"white\"},
-					{\"text\":\"MSpaceDev\",\"color\":\"dark_purple\",\"bold\":\"true\"},
-					{\"text\":\"\\\\n\\\\n  \",\"color\":\"white\"},
-					{\"text\":\"Additional ideas and\",\"color\":\"black\"},
+					{\"text\":\"MSpaceDev\",\"color\":\"#e30000\",\"bold\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.youtube.com/c/MinecraftSpace\"}},
+					{\"text\":\"\\\\n\\\\n    \",\"color\":\"white\"},
+					{\"text\":\"Development and\",\"color\":\"black\"},
 					{\"text\":\"\\\\n    \",\"color\":\"white\"},
 					{\"text\":\"improvements by\",\"color\":\"black\"},
 					{\"text\":\"\\\\n       \",\"color\":\"white\"},
-					{\"text\":\"MukiTanuki\",\"color\":\"dark_purple\",\"bold\":\"true\"}
-				  ]\'
+					{\"text\":\"MukiTanuki\",\"color\":\"#0072e5\",\"bold\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://twitter.com/MukiTanuki\"}}
+				  ]'
 				]
 			  }"
 			}

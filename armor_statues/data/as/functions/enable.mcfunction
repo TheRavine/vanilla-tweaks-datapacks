@@ -28,6 +28,8 @@ scoreboard players set @s as_trigger 0
 scoreboard players enable @s as_trigger
 scoreboard players set @s as_help 0
 scoreboard players enable @s as_help
+scoreboard players set @s if_invisible 0
+scoreboard players enable @s if_invisible
 #
 # Set angle step for rotation and pose adjustment to default 15 degrees
 #

@@ -7,7 +7,14 @@
 #
 execute if entity @s[scores={as_trigger=1000}] as @e[type=armor_stand,tag=as_selected] run function as:locking/lock
 #
-execute if entity @s[scores={as_trigger=1001}] as @e[type=armor_stand,distance=..3,tag=as_locked,tag=!as_sealed,sort=nearest,limit=1,nbt=!{Marker:1b},nbt=!{Invulnerable:1b}] run function as:locking/unlock
+# Unlocking
+#
+# creative player
+execute if entity @s[scores={as_trigger=1001},gamemode=creative] as @e[type=armor_stand,distance=..3,tag=as_locked,tag=!as_sealed,sort=nearest,limit=1,nbt=!{Marker:1b},nbt=!{Invulnerable:1b}] run function as:locking/unlock
+# UUID lock disabled
+execute if data storage customizable_armor_stands:settings as_admin{uuid_lock:"Disabled"} if entity @s[scores={as_trigger=1001},gamemode=survival] as @e[type=armor_stand,distance=..3,tag=as_locked,tag=!as_sealed,sort=nearest,limit=1,nbt=!{Marker:1b},nbt=!{Invulnerable:1b}] run function as:locking/unlock
+# UUID lock enabled
+execute if data storage customizable_armor_stands:settings as_admin{uuid_lock:"Enabled"} if entity @s[scores={as_trigger=1001},gamemode=survival] as @e[type=armor_stand,distance=..3,tag=as_locked,tag=!as_sealed,sort=nearest,limit=1,nbt=!{Marker:1b},nbt=!{Invulnerable:1b}] run function as:locking/lock_check
 #
 # Sealing can only be used in creative mode and makes the armor stand invulnerable as well as locking it
 #

@@ -1,5 +1,5 @@
 #
-# Description:	Align stand with tripwire hook to make a tool rack
+# Description:	Align stand with tripwire hook to make a tool rack for small armor stands
 # Called by:	as:trigger
 # Entity @s:	armor stand
 #
@@ -31,7 +31,7 @@ execute if entity @s[tag=!as_rack] run tellraw @a[tag=as_selected,tag=as_chat] [
 # Otherwise, adjust the armor stand pose and settings, disabling all slots but the main hand, and move it into place
 #
 execute if entity @s[tag=as_rack,scores={as_trigger=155}] run data merge entity @s {ShowArms:1b,Invisible:1b,Pose:{Head:[0.0f,0.001f,0.0f],Body:[0.0f,0.001f,0.0f],RightArm:[-100.0f,90.0f,180.0f],LeftArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f]},DisabledSlots:4079166}
-execute if entity @s[tag=as_rack,scores={as_trigger=155}] at @s run tp @s ^-0.17 ^0.24 ^-0.05
+execute if entity @s[tag=as_rack,scores={as_trigger=155}] at @s run tp @s ^-0.085 ^0.87 ^-0.05
 #
 # Tag the armor stand as modified
 #
