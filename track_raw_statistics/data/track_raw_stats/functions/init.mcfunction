@@ -75,10 +75,10 @@ scoreboard objectives add ts_UseFishingRod minecraft.used:minecraft.fishing_rod 
 # Break
 #
 scoreboard objectives add ts_BreakPick minecraft.broken:minecraft.diamond_pickaxe "Break Diamond Pickaxe"
-scoreboard objectives add ts_BreakPick minecraft.broken:minecraft.diamond_axe "Break Diamond Axe"
-scoreboard objectives add ts_BreakPick minecraft.broken:minecraft.diamond_shovel "Break Diamond Shovel"
-scoreboard objectives add ts_BreakPick minecraft.broken:minecraft.diamond_sword "Break Diamond Sword"
-scoreboard objectives add ts_BreakPick minecraft.broken:minecraft.diamond_hoe "Break Diamond Hoe"
+scoreboard objectives add ts_BreakAxe minecraft.broken:minecraft.diamond_axe "Break Diamond Axe"
+scoreboard objectives add ts_BreakShovel minecraft.broken:minecraft.diamond_shovel "Break Diamond Shovel"
+scoreboard objectives add ts_BreakSword minecraft.broken:minecraft.diamond_sword "Break Diamond Sword"
+scoreboard objectives add ts_BreakHoe minecraft.broken:minecraft.diamond_hoe "Break Diamond Hoe"
 scoreboard objectives add ts_BreakBow minecraft.broken:minecraft.bow "Break Bow"
 scoreboard objectives add ts_BreakShears minecraft.broken:minecraft.shears "Break Shears"
 
@@ -152,6 +152,12 @@ scoreboard objectives add ts_KillWolf minecraft.killed:minecraft.wolf "Kill Wolf
 scoreboard objectives add ts_KillZombie minecraft.killed:minecraft.zombie "Kill Zombie"
 scoreboard objectives add ts_KillZombieH minecraft.killed:minecraft.zombie_horse "Kill Zombie Horse"
 scoreboard objectives add ts_KillZombieV minecraft.killed:minecraft.zombie_villager "Kill Zombie Villager"
+scoreboard objectives add ts_KillWandering minecraft.killed:minecraft.wandering_trader "Kill Wandering Trader"
+scoreboard objectives add ts_KillTraderLla minecraft.killed:minecraft.trader_llama "Kill Trader Llama"
+scoreboard objectives add ts_KillFox minecraft.killed:minecraft.fox "Kill Fox"
+scoreboard objectives add ts_KillPanda minecraft.killed:minecraft.panda "Kill Panda"
+scoreboard objectives add ts_KillPillager minecraft.killed:minecraft.pillager "Kill Pillager"
+scoreboard objectives add ts_KillRavager minecraft.killed:minecraft.ravager "Kill Ravager"
 
 #
 # Killed by
@@ -197,3 +203,9 @@ scoreboard objectives add ts_DthWolf minecraft.killed_by:minecraft.wolf "Killed 
 scoreboard objectives add ts_DthZombie minecraft.killed_by:minecraft.zombie "Killed by Zombie"
 scoreboard objectives add ts_DthZombieH minecraft.killed_by:minecraft.zombie_horse "Killed by Zombie Horse"
 scoreboard objectives add ts_DthZombieV minecraft.killed_by:minecraft.zombie_villager "Killed by Zombie Villager"
+scoreboard objectives add ts_DthWandering minecraft.killed:minecraft.wandering_trader "Killed by Wandering Trader"
+scoreboard objectives add ts_DthTraderLla minecraft.killed:minecraft.trader_llama "Killed by Trader Llama"
+scoreboard objectives add ts_DthFox minecraft.killed:minecraft.fox "Killed by Fox"
+scoreboard objectives add ts_DthPanda minecraft.killed:minecraft.panda "Killed by Panda"
+scoreboard objectives add ts_DthPillager minecraft.killed:minecraft.pillager "Killed by Pillager"
+scoreboard objectives add ts_DthRavager minecraft.killed:minecraft.ravager "Killed by Ravager"
