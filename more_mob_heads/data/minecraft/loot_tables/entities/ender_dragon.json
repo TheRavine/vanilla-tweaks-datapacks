@@ -1,22 +1,23 @@
 {
-    "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "loot_table",
-                    "name": "minecraft:entities/reference/extra/ender_dragon"
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "loot_table",
-                    "name": "minecraft:entities/reference/emmh/ender_dragon"
-                }
-            ]
-        }
-    ]
+  "type": "minecraft:entity",
+  "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "loot_table",
+                "name": "minecraft:entities/reference/extra/ender_dragon"
+            }
+        ]
+    },
+    {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "loot_table",
+                "name": "minecraft:entities/reference/mmh/ender_dragon"
+            }
+        ]
+    }
+  ]
 }
