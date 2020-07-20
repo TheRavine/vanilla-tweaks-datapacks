@@ -15,3 +15,8 @@ execute if entity @s[scores={as_trigger=9}] run data merge entity @s {Invisible:
 execute if entity @s[scores={as_trigger=10}] run data merge entity @s {Invisible:1b}
 execute if entity @s[scores={as_trigger=11}] run data merge entity @s {CustomNameVisible:1b}
 execute if entity @s[scores={as_trigger=12}] run data merge entity @s {CustomNameVisible:0b}
+#
+# Report changes to gravity setting as it is not visible
+#
+execute if entity @s[scores={as_trigger=7}] run tellraw @p {"color":"dark_green","text":"<Stick_God> Gravity is turned on"}
+execute if entity @s[scores={as_trigger=8}] run tellraw @p {"color":"dark_green","text":"<Stick_God> Gravity is turned off"}

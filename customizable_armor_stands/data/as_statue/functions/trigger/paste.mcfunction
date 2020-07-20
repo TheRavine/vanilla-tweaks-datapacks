@@ -30,4 +30,4 @@ execute store result entity @s Small byte 1 run data get entity @p SelectedItem.
 execute store result entity @s NoGravity byte 1 run data get entity @p SelectedItem.tag.SavedPose.NoGravity 1
 execute store result entity @s Invisible byte 1 run data get entity @p SelectedItem.tag.SavedPose.Invisible 1
 execute store result entity @s CustomNameVisible byte 1 run data get entity @p SelectedItem.tag.SavedPose.CustomNameVisible 1
-title @p actionbar {"text":"Settings and pose pasted from book","color":"aqua"}
+tellraw @p {"text":"<Stick_God> Settings and pose pasted from the book","color":"dark_green"}

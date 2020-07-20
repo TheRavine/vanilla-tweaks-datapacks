@@ -36,7 +36,7 @@ execute if entity @s[scores={as_trigger=120}] run scoreboard players set @s as_a
 execute if entity @s[scores={as_trigger=121}] run scoreboard players set @s as_angle 15
 execute if entity @s[scores={as_trigger=122}] run scoreboard players set @s as_angle 5
 execute if entity @s[scores={as_trigger=123}] run scoreboard players set @s as_angle 1
-execute if entity @s[scores={as_trigger=120..123}] run title @s actionbar [{"text":"Angle step set to ","color":"aqua"},{"score":{"name":"@s","objective":"as_angle"},"color":"aqua"},{"text":"\u00b0","color":"aqua"}]
+execute if entity @s[scores={as_trigger=120..123}] run tellraw @s [{"text":"<Stick_God> Angle step set to ","color":"dark_green"},{"score":{"name":"@s","objective":"as_angle"},"color":"dark_green"},{"text":"\u00b0","color":"dark_green"}]
 #
 # Pose presets
 #
@@ -51,6 +51,11 @@ execute if entity @s[scores={as_trigger=60..95}] as @e[type=armor_stand,tag=as_s
 #
 execute if entity @s[scores={as_trigger=131..134}] as @e[type=armor_stand,tag=as_selected] run function as_statue:trigger/mirror
 execute if entity @s[scores={as_trigger=135}] as @e[type=armor_stand,tag=as_selected] run function as_statue:trigger/flip
+#
+# Auto alignment
+#
+execute if entity @s[scores={as_trigger=151..154}] as @e[type=armor_stand,tag=as_selected] run function as_statue:trigger/align
+execute if entity @s[scores={as_trigger=155..156}] as @e[type=armor_stand,tag=as_selected] run function as_statue:trigger/rack
 #
 # Copy and paste
 #

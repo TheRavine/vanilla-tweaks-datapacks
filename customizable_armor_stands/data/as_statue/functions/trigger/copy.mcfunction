@@ -34,5 +34,5 @@ execute store result entity @p SelectedItem.tag.SavedPose.CustomNameVisible byte
 scoreboard players set #as_temp as_pose 1
 execute store result entity @p SelectedItem.tag.SavedPose.PoseSaved byte 1 run scoreboard players get #as_temp as_pose
 scoreboard players reset #as_temp as_pose
-title @p actionbar {"text":"Pose and settings copied to the book","color":"aqua"}
+tellraw @p {"text":"<Stick_God> Pose and settings copied to the book","color":"dark_green"}
 effect give @s minecraft:glowing 1

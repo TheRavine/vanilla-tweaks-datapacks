@@ -1,7 +1,7 @@
 #
-# Description:Enable system for the player and issue control book
-# Called by:command block
-# Entity @s:player
+# Description:	Enable system for the player and issue control book
+# Called by:	command block
+# Entity @s:	player
 #
 # Trigger values in use are:	1-12		Style settings
 #								20-39		Pose presets
@@ -13,6 +13,7 @@
 #								124-125		Face towards or away
 #								131-135		Pose mirror and flip
 #								141-142		Pose presets
+#								151-155		Auto alignment
 #								999			Check target
 #								1000-1003	Lock and seal
 #								1004-1005	Copy and paste
@@ -29,13 +30,13 @@ scoreboard players set @s as_angle 15
 # Give control book
 #
 give @s minecraft:written_book{
-	title:"Statues V2.3",
+	title:"Statues V2.4",
 	author:"Stick God",
 	datapack:"ArmourStatuesV2",
 	pages:[
 		"[
 			{\"text\":\"      \",\"color\":\"white\"},
-			{\"text\":\"Statues V2.3\",\"color\":\"dark_blue\"},
+			{\"text\":\"Statues V2.4\",\"color\":\"dark_blue\"},
 			{\"text\":\"     \",\"color\":\"white\"},
 			{\"text\":\"\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"This book allows you to apply basic settings to an\\narmour stand. Clicking the coloured links will adjust\\nthe closest armour stand within three blocks.\",\"color\":\"yellow\"}]}},
 			{\"text\":\"\\n\\nTable of Contents\",\"color\":\"black\"},
@@ -44,9 +45,10 @@ give @s minecraft:written_book{
 			{\"text\":\"\\nAdjust Rotation\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":3}},
 			{\"text\":\"\\nPose Presets\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":4}},
 			{\"text\":\"\\nPose Adjustment\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":5}},
-			{\"text\":\"\\nPose Mirror & Flip\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":6}},
-			{\"text\":\"\\nUtilities\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":6}},
-			{\"text\":\"\\nCredits\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":7}},
+			{\"text\":\"\\nAuto Alignment\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":6}},
+			{\"text\":\"\\nPose Mirror & Flip\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":7}},
+			{\"text\":\"\\nUtilities\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":7}},
+			{\"text\":\"\\nCredits\",\"color\":\"dark_aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":8}},
 			{\"text\":\"\\n\\n      \",\"color\":\"white\"},
 			{\"text\":\"Check Target\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 999\"}}
 		]",
@@ -176,10 +178,10 @@ give @s minecraft:written_book{
 			{\"text\":\"       ..\",\"color\":\"white\"},
 			{\"text\":\"Sad\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 37\"}},
 			{\"text\":\"\\nArabesque\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 28\"}},
-			{\"text\":\"  \",\"color\":\"white\"},
+			{\"text\":\" .\",\"color\":\"white\"},
 			{\"text\":\"Joyous\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 38\"}},
 			{\"text\":\"\\nCupid\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 29\"}},
-			{\"text\":\"        ..\",\"color\":\"white\"},
+			{\"text\":\"        .\",\"color\":\"white\"},
 			{\"text\":\"Stargazing\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 39\"}},
 			{\"text\":\"\\n\\nBlock\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 141\"}},
 			{\"text\":\"        ..\",\"color\":\"white\"},
@@ -276,9 +278,25 @@ give @s minecraft:written_book{
 			{\"text\":\"+\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 95\"}}
 		]",
 		"[
+			{\"text\":\"     \",\"color\":\"white\"},
+			{\"text\":\"Auto Alignment\",\"color\":\"dark_blue\"},
+			{\"text\":\"   \",\"color\":\"white\"},
+			{\"text\":\"\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Pose and position an armour stand to align\\na held block or item with an adjacent block.\",\"color\":\"yellow\"}]}},
+			{\"text\":\"\\n\\n\",\"color\":\"white\"},
+			{\"text\":\"Block on surface\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 151\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Align an armour stand placed on a surface so that\\na block held by it appears on the surface.\",\"color\":\"yellow\"}]}},
+			{\"text\":\"\\n\\n\",\"color\":\"white\"},
+			{\"text\":\"Item on surface\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 152\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Align an armour stand placed on a surface so that\\n an item held by it appears upright on the surface.\",\"color\":\"yellow\"}]}},
+			{\"text\":\"\\n\",\"color\":\"white\"},
+			{\"text\":\"Item flat on surface\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 153\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Align an armour stand placed on a surface so that a\\nnon-tool item held by it appears flat on the surface.\",\"color\":\"yellow\"}]}},
+			{\"text\":\"\\n\",\"color\":\"white\"},
+			{\"text\":\"Tool flat on surface\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 154\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Align an armour stand placed on a surface so that\\na tool held by it appears flat on the surface.\",\"color\":\"yellow\"}]}},
+			{\"text\":\"\\n\\n\",\"color\":\"white\"},
+			{\"text\":\"Tool rack\",\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger as_trigger set 155\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Align an armour stand with a tripwire hook on the wall above\\nit so that a tool held by it appears to be hanging up.\\n\\nAlso locks the armour stand and disables all slots except\\nthe main hand.\",\"color\":\"yellow\"}]}}
+		]",
+		"[
 			{\"text\":\"  .\",\"color\":\"white\"},
 			{\"text\":\"Pose Mirror & Flip\",\"color\":\"dark_blue\"},
-			{\"text\":\" .\",\"color\":\"white\"},
+			{\"text\":\" \",\"color\":\"white\"},
 			{\"text\":\"\\u24be\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Mirroring copies the arm or leg pose from left to\\nright or vice versa. Flipping reverses the armour\\nstand's pose entirely.\",\"color\":\"yellow\"}]}},
 			{\"text\":\"\\n\\n \",\"color\":\"white\"},
 			{\"text\":\"Mirror Arms\",\"color\":\"black\"},
