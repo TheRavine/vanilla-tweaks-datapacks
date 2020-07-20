@@ -31,7 +31,7 @@ execute as @e[type=minecraft:wither,tag=!md_tagged] at @s run replaceitem entity
 execute as @e[type=minecraft:wither_skeleton,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDWitherSkeleton:1b,MDItem:1b}
 execute as @e[type=minecraft:zombie,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDZombie:1b,MDItem:1b}
 execute as @e[type=minecraft:zombie_horse,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDZombieHorse:1b,MDItem:1b}
-execute as @e[type=minecraft:zombie_pigman,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDZombiePigman:1b,MDItem:1b}
+execute as @e[type=minecraft:zombified_piglin,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDZombiePigman:1b,MDItem:1b}
 execute as @e[type=minecraft:zombie_villager,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDZombieVillager:1b,MDItem:1b}
 
 execute as @e[type=#md:hostile_mobs,tag=!md_tagged] at @s run data merge entity @s {Tags:["md_tagged"],ArmorDropChances:[2.0f,2.0f,2.0f,2.0f]}
