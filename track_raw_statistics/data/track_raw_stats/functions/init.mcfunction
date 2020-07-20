@@ -70,6 +70,7 @@ scoreboard objectives add ts_UseEnderPearl minecraft.used:minecraft.ender_pearl 
 scoreboard objectives add ts_UseTrident minecraft.used:minecraft.trident "Thrown Trident"
 scoreboard objectives add ts_UseBottleEnch minecraft.used:minecraft.experience_bottle "Thrown Bottle o' Enchanting"
 scoreboard objectives add ts_UseFishingRod minecraft.used:minecraft.fishing_rod "Cast Fishing Rod"
+scoreboard objectives add ts_UseHoneyBottl minecraft.used:minecraft.honey_bottle "Drink Honey Bottle"
 
 #
 # Break
@@ -79,6 +80,13 @@ scoreboard objectives add ts_BreakAxe minecraft.broken:minecraft.diamond_axe "Br
 scoreboard objectives add ts_BreakShovel minecraft.broken:minecraft.diamond_shovel "Break Diamond Shovel"
 scoreboard objectives add ts_BreakSword minecraft.broken:minecraft.diamond_sword "Break Diamond Sword"
 scoreboard objectives add ts_BreakHoe minecraft.broken:minecraft.diamond_hoe "Break Diamond Hoe"
+
+scoreboard objectives add ts_BreakNPick minecraft.broken:minecraft.netherite_pickaxe "Break Netherite Pickaxe"
+scoreboard objectives add ts_BreakNAxe minecraft.broken:minecraft.netherite_axe "Break Netherite Axe"
+scoreboard objectives add ts_BreakNShovel minecraft.broken:minecraft.netherite_shovel "Break Netherite Shovel"
+scoreboard objectives add ts_BreakNSword minecraft.broken:minecraft.netherite_sword "Break Netherite Sword"
+scoreboard objectives add ts_BreakNHoe minecraft.broken:minecraft.netherite_hoe "Break Netherite Hoe"
+
 scoreboard objectives add ts_BreakBow minecraft.broken:minecraft.bow "Break Bow"
 scoreboard objectives add ts_BreakShears minecraft.broken:minecraft.shears "Break Shears"
 
@@ -92,10 +100,17 @@ scoreboard objectives add ts_MineRedstone minecraft.mined:minecraft.redstone_ore
 scoreboard objectives add ts_MineLapis minecraft.mined:minecraft.lapis_ore "Mine Lapis"
 scoreboard objectives add ts_MineIron minecraft.mined:minecraft.iron_ore "Mine Iron"
 scoreboard objectives add ts_MineGold minecraft.mined:minecraft.gold_ore "Mine Gold"
+scoreboard objectives add ts_MineNetherite minecraft.mined:minecraft.ancient_debris "Mine Ancient Debris"
 
 #
 # Kill
 #
+scoreboard objectives add ts_KillHoglin minecraft.killed:minecraft.hoglin "Kill Hoglin"
+scoreboard objectives add ts_KillPiglin minecraft.killed:minecraft.piglin "Kill Piglin"
+scoreboard objectives add ts_KillStrider minecraft.killed:minecraft.strider "Kill Strider"
+scoreboard objectives add ts_KillZoglin minecraft.killed:minecraft.zoglin "Kill Zoglin"
+scoreboard objectives add ts_KillBee minecraft.killed:minecraft.bee "Kill Bee"
+
 scoreboard objectives add ts_KillBat minecraft.killed:minecraft.bat "Kill Bat"
 scoreboard objectives add ts_KillBlaze minecraft.killed:minecraft.blaze "Kill Blaze"
 scoreboard objectives add ts_KillCveSpider minecraft.killed:minecraft.cave_spider "Kill Cave Spider"
@@ -125,7 +140,7 @@ scoreboard objectives add ts_KillOcelot minecraft.killed:minecraft.ocelot "Kill 
 scoreboard objectives add ts_KillParrot minecraft.killed:minecraft.parrot "Kill Parrot"
 scoreboard objectives add ts_KillPhantom minecraft.killed:minecraft.phantom "Kill Phantom"
 scoreboard objectives add ts_KillPig minecraft.killed:minecraft.pig "Kill Pig"
-scoreboard objectives add ts_KillPigman minecraft.killed:minecraft.zombie_pigman "Kill Zombie Pigman"
+scoreboard objectives add ts_KillPigman minecraft.killed:minecraft.zombified_piglin "Kill Zombified Piglin"
 scoreboard objectives add ts_KillPolarBear minecraft.killed:minecraft.polar_bear "Kill Polar Bear"
 scoreboard objectives add ts_KillPuffish minecraft.killed:minecraft.pufferfish "Kill Pufferfish"
 scoreboard objectives add ts_KillRabbit minecraft.killed:minecraft.rabbit "Kill Rabbit"
@@ -162,6 +177,12 @@ scoreboard objectives add ts_KillRavager minecraft.killed:minecraft.ravager "Kil
 #
 # Killed by
 #
+scoreboard objectives add ts_DthHoglin minecraft.killed_by:minecraft.hoglin "Killed by Hoglin"
+scoreboard objectives add ts_DthPiglin minecraft.killed_by:minecraft.piglin "Killed by Piglin"
+scoreboard objectives add ts_DthStrider minecraft.killed_by:minecraft.strider "Killed by Strider"
+scoreboard objectives add ts_DthZoglin minecraft.killed_by:minecraft.zoglin "Killed by Zoglin"
+scoreboard objectives add ts_DthBee minecraft.killed_by:minecraft.bee "Killed by Bee"
+
 scoreboard objectives add ts_DthBlaze minecraft.killed_by:minecraft.blaze "Killed by Blaze"
 scoreboard objectives add ts_DthCveSpider minecraft.killed_by:minecraft.cave_spider "Killed by Cave Spider"
 scoreboard objectives add ts_DthCreeper minecraft.killed_by:minecraft.creeper "Killed by Creeper"
@@ -180,7 +201,7 @@ scoreboard objectives add ts_DthIronGolem minecraft.killed_by:minecraft.iron_gol
 scoreboard objectives add ts_DthLlama minecraft.killed_by:minecraft.llama "Killed by Llama"
 scoreboard objectives add ts_DthMagmaCube minecraft.killed_by:minecraft.magma_cube "Killed by Magma Cube"
 scoreboard objectives add ts_DthPhantom minecraft.killed_by:minecraft.phantom "Killed by Phantom"
-scoreboard objectives add ts_DthPigman minecraft.killed_by:minecraft.zombie_pigman "Killed by Zombie Pigman"
+scoreboard objectives add ts_DthPigman minecraft.killed_by:minecraft.zombified_piglin "Killed by Zombified Piglin"
 scoreboard objectives add ts_DthPolarBear minecraft.killed_by:minecraft.polar_bear "Killed by Polar Bear"
 scoreboard objectives add ts_DthPuffish minecraft.killed_by:minecraft.pufferfish "Killed by Pufferfish"
 scoreboard objectives add ts_DthRabbit minecraft.killed_by:minecraft.rabbit "Killed by Rabbit"
@@ -203,9 +224,9 @@ scoreboard objectives add ts_DthWolf minecraft.killed_by:minecraft.wolf "Killed 
 scoreboard objectives add ts_DthZombie minecraft.killed_by:minecraft.zombie "Killed by Zombie"
 scoreboard objectives add ts_DthZombieH minecraft.killed_by:minecraft.zombie_horse "Killed by Zombie Horse"
 scoreboard objectives add ts_DthZombieV minecraft.killed_by:minecraft.zombie_villager "Killed by Zombie Villager"
-scoreboard objectives add ts_DthWandering minecraft.killed:minecraft.wandering_trader "Killed by Wandering Trader"
-scoreboard objectives add ts_DthTraderLla minecraft.killed:minecraft.trader_llama "Killed by Trader Llama"
-scoreboard objectives add ts_DthFox minecraft.killed:minecraft.fox "Killed by Fox"
-scoreboard objectives add ts_DthPanda minecraft.killed:minecraft.panda "Killed by Panda"
-scoreboard objectives add ts_DthPillager minecraft.killed:minecraft.pillager "Killed by Pillager"
-scoreboard objectives add ts_DthRavager minecraft.killed:minecraft.ravager "Killed by Ravager"
+scoreboard objectives add ts_DthWandering minecraft.killed_by:minecraft.wandering_trader "Killed by Wandering Trader"
+scoreboard objectives add ts_DthTraderLla minecraft.killed_by:minecraft.trader_llama "Killed by Trader Llama"
+scoreboard objectives add ts_DthFox minecraft.killed_by:minecraft.fox "Killed by Fox"
+scoreboard objectives add ts_DthPanda minecraft.killed_by:minecraft.panda "Killed by Panda"
+scoreboard objectives add ts_DthPillager minecraft.killed_by:minecraft.pillager "Killed by Pillager"
+scoreboard objectives add ts_DthRavager minecraft.killed_by:minecraft.ravager "Killed by Ravager"
