@@ -1,6 +1,5 @@
 advancement revoke @s only multiplayer_sleep:sleep
-
-tag @s[nbt={Sleeping:1b}] add inBed
+execute if data entity @s SleepingY run tag @s add inBed
 
 execute as @s[tag=inBed] at @s run function multiplayer_sleep:in_bed
 
