@@ -12,9 +12,11 @@ execute as @e[type=minecraft:evoker,tag=!md_tagged] at @s run replaceitem entity
 execute as @e[type=minecraft:ghast,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDGhast:1b,MDItem:1b}
 execute as @e[type=minecraft:guardian,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDGuardian:1b,MDItem:1b}
 execute as @e[type=minecraft:husk,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDHusk:1b,MDItem:1b}
+execute as @e[type=minecraft:ravager,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDRavager:1b,MDItem:1b}
 execute as @e[type=minecraft:illusioner,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDIllusioner:1b,MDItem:1b}
 execute as @e[type=minecraft:magma_cube,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDMagmaCube:1b,MDItem:1b}
 execute as @e[type=minecraft:phantom,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDPhantom:1b,MDItem:1b}
+execute as @e[type=minecraft:pillager,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDPillager:1b,MDItem:1b}
 execute as @e[type=minecraft:shulker,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDShulker:1b,MDItem:1b}
 execute as @e[type=minecraft:silverfish,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDSilverfish:1b,MDItem:1b}
 execute as @e[type=minecraft:skeleton,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDSkeleton:1b,MDItem:1b}
@@ -32,7 +34,7 @@ execute as @e[type=minecraft:zombie_horse,tag=!md_tagged] at @s run replaceitem 
 execute as @e[type=minecraft:zombie_pigman,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDZombiePigman:1b,MDItem:1b}
 execute as @e[type=minecraft:zombie_villager,tag=!md_tagged] at @s run replaceitem entity @s armor.head minecraft:stone_button{Unbreakable:1b,MDZombieVillager:1b,MDItem:1b}
 
-execute as @e[tag=!md_tagged] at @s run data merge entity @s {Tags:["md_tagged"],ArmorDropChances:[2.0f,2.0f,2.0f,2.0f]}
+execute as @e[type=#md:hostile_mobs,tag=!md_tagged] at @s run data merge entity @s {Tags:["md_tagged"],ArmorDropChances:[2.0f,2.0f,2.0f,2.0f]}
 
 execute as @e[type=item,nbt={Item:{id:"minecraft:stone_button",tag:{Unbreakable:1b,MDBlaze:1b}}}] at @s run scoreboard players add §r§eBlaze md_mobDeaths 1
 execute as @e[type=item,nbt={Item:{id:"minecraft:stone_button",tag:{Unbreakable:1b,MDCaveSpider:1b}}}] at @s run scoreboard players add §r§eCaveSpider md_mobDeaths 1

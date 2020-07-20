@@ -36,5 +36,5 @@ execute if score §r§eZombiePigman md_mobDeaths matches 1.. run tellraw @s [{"t
 execute if score §r§eZombieVillager md_mobDeaths matches 1.. run tellraw @s [{"text":"ZombieVillager: ","color":"yellow"},{"score":{"name":"§r§eZombieVillager","objective":"md_mobDeaths"},"color":"red"}]
 
 scoreboard players set #md_countMobs md_state 0
-execute as @e[tag=md_tagged] run replaceitem entity @s armor.head minecraft:air
+execute as @e[type=#md:hostile_mobs,tag=md_tagged] run replaceitem entity @s armor.head minecraft:air
 scoreboard players set @s md_stop 0
