@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:clock"
+        },
+        "title": {
+            "text": "Real Time Clock",
+            "color": "white",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "Adds a trigger that allows you to view how long a world has been running in real time minutes and hours.",
+            "color": "green",
+            "bold": false,
+            "italic": true
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "goal"
+    },
+    "parent": "main:main/root",
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
