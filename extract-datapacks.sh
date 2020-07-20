@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-MINECRAFT_VERSION="1.14"
+MINECRAFT_VERSION="1.15"
 
 for arg in "$@"; do
   version=$(echo $arg | gsed -e 's/.\+ v\([0-9]\(\.[0-9]\)\+\)\.\+zip/\1/')
