@@ -10,6 +10,7 @@ for arg in "$@"; do
   echo $base_name
   rm -rf $base_name
   mkdir $base_name
+  git restore $base_name/README.md
   pushd $base_name
   unzip "../$arg"
   find . -type f -print0 |xargs -0 dos2unix
