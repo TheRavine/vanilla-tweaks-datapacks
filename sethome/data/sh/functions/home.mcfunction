@@ -10,6 +10,5 @@ tag @s add sh_tpHome
 execute as @e[tag=sh_home,sort=nearest,limit=1] at @s run function sh:position_home
 
 scoreboard players set @s home 0
-execute at @s run tp @s ~ ~1 ~
 
 scoreboard players operation @s sh_cooldown = #sh_cooldown sh_cooldown
