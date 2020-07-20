@@ -15,11 +15,6 @@ scoreboard objectives add ia_countedItems dummy "Counted Items"
 scoreboard objectives add ia_averageItems dummy "§r§eAverage items per"
 scoreboard players set §r§ehour ia_averageItems 0
 
-scoreboard objectives add ia_toggleSidebar trigger "toggle average items sidebar"
-scoreboard players add #ia_toggleSidebarMain ia_toggleSidebar 0
-execute if score #ia_toggleSidebarMain ia_toggleSidebar matches 0 run scoreboard players set #ia_toggleSidebarMain ia_toggleSidebar -1
-scoreboard players set #ia_toggleSidebar ia_toggleSidebar -1
-
 scoreboard objectives add ia_constants dummy "Constants"
 scoreboard players set #ia_12 ia_constants 12
 scoreboard players set #ia_60 ia_constants 60

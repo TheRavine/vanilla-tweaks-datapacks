@@ -3,10 +3,8 @@
 scoreboard players enable @a ia_setTrackTime
 scoreboard players enable @a ia_startTracking
 scoreboard players enable @a ia_help
-scoreboard players enable @a ia_toggleSidebar
 execute as @a[scores={ia_startTracking=1..}] at @s run function item_avg:start_tracking
 execute as @a[scores={ia_help=1..}] at @s run function item_avg:help
-execute as @a[scores={ia_toggleSidebar=1..}] at @s run function item_avg:toggle_sidebar
 
 execute as @e[tag=ia_placeDataPoint] at @s align xz positioned ~0.5 ~ ~0.5 run function item_avg:place_data_point
 
