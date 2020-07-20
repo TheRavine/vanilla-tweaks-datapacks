@@ -1,0 +1,1 @@
+tellraw @s [{"text":"Nether portal frames must use at least ","color":"gold"},{"score":{"name":"#minSize","objective":"cusNetPor.config"},"color":"yellow"},{"text":" and at most ","color":"gold"},{"score":{"name":"#maxSize","objective":"cusNetPor.config"},"color":"yellow"},{"text":" obsidian blocks.","color":"gold"}]
