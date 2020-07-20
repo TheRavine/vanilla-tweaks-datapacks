@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-MINECRAFT_VERSION="1.13"
+MINECRAFT_VERSION="1.14"
 
 for arg in "$@"; do
   version=$(echo $arg | gsed -e 's/.\+ v\([0-9]\(\.[0-9]\)\+\)\.\+zip/\1/')
@@ -15,5 +15,5 @@ for arg in "$@"; do
   find . -type f -print0 |xargs -0 dos2unix
   popd
   git add $base_name
-  git commit -m "Updated $base_name to $version-$MINECRAFT_VERSION"
+  git commit -m "Updated $base_name to $version-$MINECRAFT_VERSION" || true
 done
