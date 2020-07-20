@@ -1,0 +1,38 @@
+{
+  "pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:elytra",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": 1,
+							"limit": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:dragon_egg",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": 1,
+							"limit": 1
+						}
+					]
+				}
+			]
+		}
+	]
+}
