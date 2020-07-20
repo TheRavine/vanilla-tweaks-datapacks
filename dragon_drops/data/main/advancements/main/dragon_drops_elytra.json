@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:elytra"
+        },
+        "title": {
+            "text": "Dragon Drops Elytra",
+            "color": "white",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "Makes the Ender Dragon drop a dragon egg and elytra on death.",
+            "color": "green",
+            "bold": false,
+            "italic": true
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "goal"
+    },
+    "parent": "main:main/root",
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
