@@ -5,14 +5,14 @@
 execute as @e[type=minecraft:wandering_trader,tag=!trade_items_spawned] at @s run function wt:setup_trade_index_items
 
 # Amount of block trades
-execute as @e[type=minecraft:wandering_trader,tag=!has_new_block_trades] at @s run scoreboard players set @s math_input1 5
-execute as @e[type=minecraft:wandering_trader,tag=!has_new_block_trades] at @s run scoreboard players set @s math_input2 7
+execute as @e[type=minecraft:wandering_trader,tag=!has_new_block_trades] at @s run scoreboard players set @s math_input1 15
+execute as @e[type=minecraft:wandering_trader,tag=!has_new_block_trades] at @s run scoreboard players set @s math_input2 21
 execute as @e[type=minecraft:wandering_trader,tag=!has_new_block_trades] at @s run function math:random
 execute as @e[type=minecraft:wandering_trader,tag=!has_new_block_trades] at @s run function wt:provide_block_trades
 
 # Amount of hermit trades
-execute as @e[type=minecraft:wandering_trader,tag=!has_new_hermit_trades] at @s run scoreboard players set @s math_input1 1
-execute as @e[type=minecraft:wandering_trader,tag=!has_new_hermit_trades] at @s run scoreboard players set @s math_input2 3
+execute as @e[type=minecraft:wandering_trader,tag=!has_new_hermit_trades] at @s run scoreboard players set @s math_input1 2
+execute as @e[type=minecraft:wandering_trader,tag=!has_new_hermit_trades] at @s run scoreboard players set @s math_input2 5
 execute as @e[type=minecraft:wandering_trader,tag=!has_new_hermit_trades] at @s run function math:random
 execute as @e[type=minecraft:wandering_trader,tag=!has_new_hermit_trades] at @s[tag=has_new_block_trades] run function wt:provide_hermit_trades
 
