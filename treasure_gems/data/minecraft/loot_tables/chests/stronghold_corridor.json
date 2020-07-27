@@ -177,7 +177,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{display:{Name:\"{\\\"text\\\":\\\"§r§eSapphire Gem\\\"}\"},SkullOwner:{Id:\"b93289fd-e4f1-43f9-8087-6786c426c0ba\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThjNTExYjk2MWIyZGNhMDEyZjNhNWY1YjQ2NjA3OGEwZWMyMzgwYTc2ZDUxOWVhMzY0YTdkNmRjMjhlMWJiIn19fQ==\"}]}}}"
+                            "tag": "{display:{Name:\"{\\\"text\\\":\\\"§r§eSapphire Gem\\\"}\"},SkullOwner:{Id:[I;2136532247,-2064694493,-2128802398,-1285646523],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWVlNDY5MzBmNDg2NTkyZGJlMzVjMjEzNDc5ODE0MDNlMTQ3MGVjMGYwODUwY2M5MzM1YTQ4OTA5ODJjOTEzMCJ9fX0=\"}]}}}"
                         },
                         {
                             "function": "set_count",
@@ -195,7 +195,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{display:{Name:\"{\\\"text\\\":\\\"§r§eRuby Gem\\\"}\"},SkullOwner:{Id:\"68bb46f2-ad7c-4ad7-969b-098b0c72de47\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjRiOTBkNmJhNzY0OGU2MjQ3ZmVlNWVjZGQ2MjRlYjRiNWZiM2E3MGNhNGJjZmM1NzNlZDc2NmM5MTBlN2YxNyJ9fX0=\"}]}}}"
+                            "tag": "{display:{Name:\"{\\\"text\\\":\\\"§r§eRuby Gem\\\"}\"},SkullOwner:{Id:[I;-1081697253,-440318984,-1764894910,1326511491],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjkyNGUyNzI2YTg1NDE4M2FhMTE5NWM0ZTk1NzQ4NzdiOGFlZTM1NWI1NzViNWMwYmJlMGQ0MDc1Y2ZlOThjOCJ9fX0=\"}]}}}"
                         },
                         {
                             "function": "set_count",
@@ -213,7 +213,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{display:{Name:\"{\\\"text\\\":\\\"§r§eAmethyst Gem\\\"}\"},SkullOwner:{Id:\"a288ea31-4bb2-46ba-90d9-25518b4364db\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc5ZjhjOTI3NzZkNjQyZDExOWY5ZTkyMzYwYjFlNWI5NzFlNjZlNjE0MjhhM2UxYjMxMWQ4YjYxODVlNiJ9fX0=\"}]}}}"
+                            "tag": "{display:{Name:\"{\\\"text\\\":\\\"§r§eAmethyst Gem\\\"}\"},SkullOwner:{Id:[I;741302389,-1122680079,-1949478128,-128023553],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDJjYmZmMDZhZDJlMzg3ZDM0ZjZiOGE5YjkxYzI4MTcyMTViNzgxYWZlNjgzODk1ZjNkNmViNGUzZGE0MTgifX19\"}]}}}"
                         },
                         {
                             "function": "set_count",
@@ -231,7 +231,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{display:{Name:\"{\\\"text\\\":\\\"§r§eTopaz Gem\\\"}\"},SkullOwner:{Id:\"37195137-2b51-4261-9b27-ccc216f7f7d1\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThkMmNlODA3MjZlMmNmOTkwNGI2YzQyOGEzODJhMjRlNmY0NjNhZjgzNTg1OGYxZjM1NDE0NjJiZjEwNTIwOCJ9fX0=\"}]}}}"
+                            "tag": "{display:{Name:\"{\\\"text\\\":\\\"§r§eTopaz Gem\\\"}\"},SkullOwner:{Id:[I;936336905,1647332135,-1666376031,-69753802],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGQzYTI0MmRhM2FkYjE2MzE1Y2UyOWUxOWY3OWNjMjJmMzQwNTEwNTNhYmRhZDU2NjhlYWNhYWMxZWEwYjIyMiJ9fX0=\"}]}}}"
                         },
                         {
                             "function": "set_count",
@@ -249,7 +249,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{display:{Name:\"{\\\"text\\\":\\\"§r§eAquamarine Gem\\\"}\"},SkullOwner:{Id:\"9a860221-a5c6-49a5-a2c8-0bc1fa017c47\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzMxOGJiOGI2MjEwMzkxMzZlNDU5YWQ0NjdiOWI5ZjA0NjkzNjdkMjE2ZjU1M2RkNDRkYTNkMjNmYTU4ZjQyZiJ9fX0=\"}]}}}"
+                            "tag": "{display:{Name:\"{\\\"text\\\":\\\"§r§eAquamarine Gem\\\"}\"},SkullOwner:{Id:[I;-1447408671,1641234977,-2097543137,-1000218569],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmE5ZTI4ZmFiN2QzZDAxMWJjODRiZjE2ZGFmMmY5NThhOGI4OGIwNmUwZDVlNTBjMjU0NDdiNWRmNGM2MGI3YyJ9fX0=\"}]}}}"
                         },
                         {
                             "function": "set_count",
