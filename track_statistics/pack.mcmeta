@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format":4,
-      "description":"Track Statistics"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"Track Statistics","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }
