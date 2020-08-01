@@ -1,5 +1,6 @@
 {
-    "values": [
-        "#main:init"
-    ]
+	"values": [
+		"count_mob_deaths:load",
+		"count_mob_deaths:tick"
+	]
 }
