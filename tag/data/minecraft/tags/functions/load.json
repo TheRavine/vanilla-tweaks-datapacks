@@ -1,5 +1,6 @@
 {
-    "values": [
-        "#main:init"
-    ]
+	"values": [
+		"tag:load",
+		"tag:tick"
+	]
 }

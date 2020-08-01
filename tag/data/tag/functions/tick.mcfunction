@@ -1,5 +1,7 @@
 # Controls everything to do with tag
 
+schedule function tag:tick 1t
+
 # Check when player wants to show help
 scoreboard players enable @a tg_help
 execute as @a[scores={tg_help=1..}] at @s run function tag:show_help

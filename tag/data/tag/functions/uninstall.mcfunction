@@ -1,5 +1,7 @@
 # Removes all scores required by the datapack
 
+schedule clear tag:tick
+
 # Scores
 scoreboard objectives remove tg_tagged
 scoreboard objectives remove tg_tagger
