@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format":4,
-      "description":"Terracotta Rotation Wrench"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"Terracotta Rotation Wrench","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }
