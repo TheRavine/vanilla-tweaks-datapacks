@@ -1,5 +1,7 @@
 {
-    "values": [
-        "#main:init"
-    ]
+	"values": [
+		"durability_ping:load",
+		"durability_ping:tick",
+		"durability_ping:second"
+	]
 }
