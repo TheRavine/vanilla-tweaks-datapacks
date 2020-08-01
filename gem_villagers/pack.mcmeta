@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format":4,
-      "description":"Gem Villagers"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"Gem Villagers","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }
