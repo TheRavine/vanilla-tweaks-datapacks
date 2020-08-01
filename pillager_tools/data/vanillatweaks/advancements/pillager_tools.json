@@ -1,0 +1,17 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:crossbow"
+		},
+		"title": "Pillager Tools         ",
+		"description": ["",{"text":"Allows you to disable bad omen, patrols or patrol leaders separately.\n","color":"gold"},{"text":"Enter","color":"green"},{"text":" ","color":"gold"},{"text":"/trigger pt_status","color":"yellow"},{"text":" for details.\n","color":"gold"},{"text":"Enter","color":"green"},{"text":" ","color":"gold"},{"text":"/function pillager_tools:toggle/","color":"yellow"},{"text":" and use the auto-complete to toggle options.","color":"gold"}],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+    "parent": "vanillatweaks:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
