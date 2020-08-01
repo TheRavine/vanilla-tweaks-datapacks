@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format":4,
-      "description":"Dragon Drops Elytra"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"Dragon Drops","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }
