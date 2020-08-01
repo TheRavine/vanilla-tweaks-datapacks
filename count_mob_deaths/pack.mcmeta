@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format":4,
-      "description":"Count Mob Deaths"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"Count Mob Deaths","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }

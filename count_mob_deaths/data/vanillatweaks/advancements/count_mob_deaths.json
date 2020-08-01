@@ -1,0 +1,17 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:rotten_flesh"
+		},
+		"title": "Count Mob Deaths         ",
+		"description": ["",{"text":"Adds the ability to view all mob deaths from the moment the system is started.\n","color":"gold"},{"text":"Enter","color":"green"},{"text":" ","color":"gold"},{"text":"/trigger md_help","color":"yellow"},{"text":" for config.","color":"gold"}],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+    "parent": "vanillatweaks:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
