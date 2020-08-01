@@ -16,8 +16,8 @@ kill @e[type=minecraft:area_effect_cloud,tag=graves.start]
 execute at @s positioned ~ ~-1 ~ if predicate graves:valid unless entity @e[dx=0,dy=0,dz=0,type=minecraft:armor_stand,tag=!graves.new,nbt=!{Marker:1b}] run setblock ~ ~ ~ minecraft:grass_block
 tag @s remove graves.new
 execute at @s run tp ~0.5 ~ ~0.5
-execute store result storage graves:storage players[0].graves[-1].x int 1 run data get entity @s Pos[0]
-execute store result storage graves:storage players[0].graves[-1].y int 1 run data get entity @s Pos[1]
-execute store result storage graves:storage players[0].graves[-1].z int 1 run data get entity @s Pos[2]
+execute store result storage graves:storage players[-1].graves[-1].x int 1 run data get entity @s Pos[0]
+execute store result storage graves:storage players[-1].graves[-1].y int 1 run data get entity @s Pos[1]
+execute store result storage graves:storage players[-1].graves[-1].z int 1 run data get entity @s Pos[2]
 execute at @s run function graves:create_model
-execute if score #locating graves.config matches 1 as @a[tag=graves.player] run tellraw @s [{"text":"Your last grave is at ","color":"gold"},{"text":"(","color":"yellow"},{"storage":"graves:storage","nbt":"players[0].graves[-1].x","color":"yellow"},{"text":", ","color":"yellow"},{"storage":"graves:storage","nbt":"players[0].graves[-1].y","color":"yellow"},{"text":", ","color":"yellow"},{"storage":"graves:storage","nbt":"players[0].graves[-1].z","color":"yellow"},{"text":")","color":"yellow"},{"text":" in ","color":"gold"},{"storage":"graves:storage","nbt":"players[0].graves[-1].dim","color":"gold"},{"text":".","color":"gold"}]
+execute if score #locating graves.config matches 1 as @a[tag=graves.player] run tellraw @s [{"text":"Your last grave is at ","color":"gold"},{"text":"(","color":"yellow"},{"storage":"graves:storage","nbt":"players[-1].graves[-1].x","color":"yellow"},{"text":", ","color":"yellow"},{"storage":"graves:storage","nbt":"players[-1].graves[-1].y","color":"yellow"},{"text":", ","color":"yellow"},{"storage":"graves:storage","nbt":"players[-1].graves[-1].z","color":"yellow"},{"text":")","color":"yellow"},{"text":" in ","color":"gold"},{"storage":"graves:storage","nbt":"players[-1].graves[-1].dim"},{"text":".","color":"gold"}]

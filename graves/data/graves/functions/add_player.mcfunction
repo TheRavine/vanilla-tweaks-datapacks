@@ -1,2 +1,2 @@
-data modify storage graves:storage players prepend value {graves:[]}
-data modify storage graves:storage players[0].uuid set from entity @s UUID
+data modify storage graves:storage players append value {graves:[]}
+data modify storage graves:storage players[-1].uuid set from entity @s UUID
