@@ -1,12 +1,12 @@
 # Creates the shop from the chest under the villager
 
 particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0.1 1
-function vs:get_coords
+function custom_villager_shops:get_coords
 
 scoreboard players operation @s vs_x -= @p vs_x
 scoreboard players operation @s vs_z -= @p vs_z
 
-function vs:position_villager
+function custom_villager_shops:position_villager
 
 execute if entity @s[tag=!vs_villager] run tellraw @p[scores={vs_sneak=1..}] {"text":"Villager trades initialized!","color":"yellow"}
 tag @s add vs_villager
