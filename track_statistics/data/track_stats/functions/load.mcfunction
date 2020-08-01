@@ -1,6 +1,6 @@
 # Desc: Sets up scores for hermitcraft to track hermit stats
 #
-# Called by: Player
+# Called by: #minecraft:load
 
 scoreboard objectives add hc_elytraKmShow dummy "Elytra km Show"
 scoreboard objectives add hc_elytraKm dummy "Elytra km"

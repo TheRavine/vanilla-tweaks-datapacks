@@ -11,3 +11,5 @@ scoreboard objectives remove hc_playTick
 scoreboard objectives remove hc_swimKmShow
 scoreboard objectives remove hc_swimKm
 scoreboard objectives remove hc_constant
+
+schedule clear track_stats:tick
