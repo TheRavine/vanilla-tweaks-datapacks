@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format":4,
-      "description":"Anti-Ghast Grief"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"Anti Ghast Grief","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }
