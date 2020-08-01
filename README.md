@@ -37,6 +37,8 @@ There are a number of oddities:
   without the hermit heads.
 - f18b6e7f21b18a9f1f3a1a479249296ba226942d - In 1.16, `armor_statues` was
   renamed to `armour_statues`
+- 3b8e57ea71601d6a005ff5ed9d002e2ad6625048 - In 1.16,
+  `wandering_trades_hermits` was renamed to `wandering_trades_hermit_edition`
 
 ## Notes
 
