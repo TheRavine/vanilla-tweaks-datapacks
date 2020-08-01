@@ -16,4 +16,4 @@ scoreboard players operation §r§ehour ia_averageItems = #ia_countedItemsCurren
 execute as @a at @s if score #ia_trackTimeClone ia_trackTime matches 0 run tellraw @s [{"text":"The source produces ±","color":"yellow","bold":false},{"bold":true,"score":{"name":"§r§ehour","objective":"ia_averageItems"},"color":"green"},{"text":" items per hour","color":"yellow","bold":false}]
 
 # Reset data point to stop tracking
-execute as @a at @s if score #ia_trackTimeClone ia_trackTime matches 0 run function item_avg:reset_data_point
+execute as @a at @s if score #ia_trackTimeClone ia_trackTime matches 0 run function item_averages:reset_data_point

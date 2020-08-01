@@ -1,5 +1,7 @@
 {
-    "values": [
-        "#main:init"
-    ]
+	"values": [
+		"item_averages:load",
+		"item_averages:tick",
+		"item_averages:second"
+	]
 }

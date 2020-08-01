@@ -1,5 +1,8 @@
 # Removes all scores required by the datapack
 
+schedule clear item_averages:tick
+schedule clear item_averages:second
+
 scoreboard objectives remove ia_startTracking
 scoreboard objectives remove ia_help
 

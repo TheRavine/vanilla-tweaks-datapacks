@@ -1,0 +1,17 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:bamboo"
+		},
+		"title": "Item Averages                      ",
+		"description": ["",{"text":"Adds a marker that tracks items flowing past it for the specified amount of time ","color":"gold"},{"text":"(Default: 2mins)","color":"yellow"},{"text":" and then calculates how many items will run through per hour.\n","color":"gold"},{"text":"Enter","color":"green"},{"text":" ","color":"gold"},{"text":"/trigger ia_help","color":"yellow"},{"text":" for details.\n","color":"gold"},{"text":"Enter","color":"green"},{"text":" ","color":"gold"},{"text":"/trigger ia_startTracking","color":"yellow"},{"text":" to start tracking items.","color":"gold"}],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+    "parent": "vanillatweaks:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
