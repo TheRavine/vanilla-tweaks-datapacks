@@ -1,5 +1,6 @@
 {
-    "values": [
-        "#main:init"
-    ]
+	"values": [
+		"multiplayer_sleep:load",
+		"multiplayer_sleep:tick"
+	]
 }
