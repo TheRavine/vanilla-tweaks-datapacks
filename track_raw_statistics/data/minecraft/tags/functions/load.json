@@ -1,5 +1,5 @@
 {
     "values": [
-        "#main:init"
+        "track_raw_stats:load"
     ]
 }
