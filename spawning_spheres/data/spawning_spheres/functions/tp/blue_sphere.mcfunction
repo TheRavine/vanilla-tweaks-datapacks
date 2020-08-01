@@ -7,4 +7,4 @@ execute if score #ss_dimBlue ss_dim matches 1 in minecraft:the_end run tp @s ~ ~
 execute at @s run summon minecraft:armor_stand ~ ~ ~ {Tags:["ss_sphere"],NoGravity:1b,Invisible:1b,Marker:1b}
 
 tag @s add ss_tpSphere
-execute as @e[tag=ss_sphere,sort=nearest,limit=1] at @s run function ss:blue_position_player
+execute as @e[tag=ss_sphere,sort=nearest,limit=1] at @s run function spawning_spheres:blue_position_player

@@ -1,5 +1,6 @@
 {
-    "values": [
-        "#main:init"
-    ]
+	"values": [
+		"spawning_spheres:load",
+		"spawning_spheres:tick"
+	]
 }
