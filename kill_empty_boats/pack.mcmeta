@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format":4,
-      "description":"Kill Empty Boats"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"Kill Empty Boats","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }
