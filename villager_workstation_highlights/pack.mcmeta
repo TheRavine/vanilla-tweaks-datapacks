@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format": 4,
-      "description": "Villager Workstation Highlights"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"Villager Workstation Highlights","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }
