@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format":3,
-      "description":"Mob Heads"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"More Mob Heads","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }
