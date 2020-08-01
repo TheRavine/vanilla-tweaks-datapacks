@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format":4,
-      "description":"Spawning Spheres"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"Spawning Spheres","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }
