@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format":4,
-      "description":"Larger Phantoms"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"Larger Phantoms","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }
