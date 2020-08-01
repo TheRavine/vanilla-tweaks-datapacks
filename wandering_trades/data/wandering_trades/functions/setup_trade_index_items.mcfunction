@@ -1,6 +1,6 @@
 # Desc: Places 2 items to transfer trade index data
 #
-# Called by: wt:tick
+# Called by: wandering_trades:tick
 
 tag @s add trade_items_spawned
 

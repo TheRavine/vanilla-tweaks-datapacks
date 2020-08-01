@@ -1,6 +1,6 @@
 # Desc: Appends random trades to wandering traders
 #
-# Called by: wt:tick
+# Called by: wandering_trades:tick
 
 # Blocks index
 scoreboard players set @s math_input1 29
@@ -15,19 +15,20 @@ scoreboard players add @s[tag=success] wt_trades 1
 
 # The amount of random trades the trader will have [+0]
 execute if score @s wt_trades >= @s wt_random run tag @s add has_new_block_trades
+execute if score @s wt_trades >= @s wt_random run tag @s add has_new_trades
 execute if score @s wt_trades >= @s wt_random run scoreboard players reset @s
 
 # Remove success and try add trade again
 tag @s[tag=!has_new_block_trades] remove success
 
 # Get trade index
-function math:random_trade_index
+function wandering_trades:math/random_trade_index
 
 # Check if trade index is in existing trades
-execute at @s[tag=!success,tag=!has_new_block_trades] as @e[type=minecraft:item,distance=..0.5,tag=trade_index_copy] run function wt:check_existing_trades
+execute at @s[tag=!success,tag=!has_new_block_trades] as @e[type=minecraft:item,distance=..0.5,tag=trade_index_copy] run function wandering_trades:check_existing_trades
 
 # Add trade to Trade Index  
-execute at @s[tag=success,tag=!has_new_block_trades] as @e[type=minecraft:item,distance=..0.5,tag=trade_index] run function wt:append_trade_index_to_list
+execute at @s[tag=success,tag=!has_new_block_trades] as @e[type=minecraft:item,distance=..0.5,tag=trade_index] run function wandering_trades:append_trade_index_to_list
 
 # Add trade to wandering trader if it has not been added already
-execute as @s[tag=success,tag=!has_new_block_trades] at @s run function wt:add_trade
+execute as @s[tag=success,tag=!has_new_block_trades] at @s run function wandering_trades:add_trade

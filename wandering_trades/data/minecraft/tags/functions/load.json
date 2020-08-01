@@ -1,5 +1,7 @@
 {
-    "values": [
-        "#main:init"
-    ]
+	"values": [
+		"wandering_trades:load",
+		"wandering_trades:math/load",
+		"wandering_trades:tick"
+	]
 }
