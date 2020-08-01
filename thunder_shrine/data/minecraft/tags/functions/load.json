@@ -1,5 +1,6 @@
 {
-    "values": [
-        "#main:init"
-    ]
+	"values": [
+		"thunder_shrine:load",
+		"thunder_shrine:tick"
+	]
 }
