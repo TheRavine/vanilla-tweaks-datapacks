@@ -2,6 +2,8 @@
 #
 # Called by: #main:second
 
+schedule function multiplayer_sleep:second 1s
+
 execute store result score #ms_time ms_time run time query daytime
 execute if score #ms_warnToggle ms_warnToggle matches -1 if score #ms_time ms_time matches 12500..24000 if entity @a[nbt={Sleeping:1b}] run tellraw @a[tag=!ms_warn] ["",{"text":"A player does not want anyone to sleep.", "color": "yellow"}]
 execute if score #ms_warnToggle ms_warnToggle matches -1 if score #ms_time ms_time matches 12500..24000 if entity @a[nbt={Sleeping:1b}] run tag @a[tag=!ms_warn] add ms_warn

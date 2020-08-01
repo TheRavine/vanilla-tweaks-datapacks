@@ -1,0 +1,17 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:red_bed"
+		},
+		"title": "Multiplayer Sleep           ",
+		"description": ["",{"text":"Adds the ability for one player to sleep and skip the night in a multiplayer world.\n","color":"gold"},{"text":"Enter","color":"green"},{"text":" ","color":"gold"},{"text":"/scoreboard players set requiredPercent ms_count <percent>","color":"yellow"},{"text":" to set the required percent of overworld players that must sleep in your world.","color":"gold"}],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+    "parent": "vanillatweaks:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

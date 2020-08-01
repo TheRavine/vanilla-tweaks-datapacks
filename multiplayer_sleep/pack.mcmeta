@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format":4,
-      "description":"Multiplayer Sleep"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"Multiplayer Sleep","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }
