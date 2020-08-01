@@ -35,6 +35,8 @@ There are a number of oddities:
   split into two incompatible datapacks `wandering_trades_hermits` (which is
   closer to the original `wandering_trades`) and a new `wandering_trades`
   without the hermit heads.
+- f18b6e7f21b18a9f1f3a1a479249296ba226942d - In 1.16, `armor_statues` was
+  renamed to `armour_statues`
 
 ## Notes
 
