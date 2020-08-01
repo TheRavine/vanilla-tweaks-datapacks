@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format":4,
-      "description":"Pillager Tools"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"Pillager Tools","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }

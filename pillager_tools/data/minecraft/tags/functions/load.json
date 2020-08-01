@@ -1,5 +1,7 @@
 {
-    "values": [
-        "#main:init"
-    ]
+	"values": [
+		"pillager_tools:load",
+		"pillager_tools:tick",
+		"pillager_tools:second"
+	]
 }
