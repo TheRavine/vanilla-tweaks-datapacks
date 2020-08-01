@@ -24,7 +24,7 @@
 		"has_the_recipe": {
 			"trigger": "minecraft:recipe_unlocked",
 			"conditions": {
-				"recipe": "wrench:wrench"
+				"recipe": "terracotta_wrench:wrench"
 			}
 		}
 	},
@@ -40,7 +40,7 @@
 	],
 	"rewards": {
 		"recipes": [
-			"wrench:wrench"
+			"terracotta_wrench:wrench"
 		]
 	}
 }

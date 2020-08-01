@@ -1,6 +1,6 @@
 # Rotates the terracotta to it's next position, from the one found
 #
-# Called by: wrench:use
+# Called by: terracotta_wrench:use
 
 # Rotates the White Glazed Terracotta
 execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ white_glazed_terracotta[facing=north] run scoreboard players set @s wrench_stopLoop 1
