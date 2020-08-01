@@ -1,6 +1,6 @@
 {
 	"pack": {
 		"pack_format": 5,
-		"description": "§r§eCustom Nether Portals"
+		"description": [{"text":"Custom Nether Portals","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
 	}
 }

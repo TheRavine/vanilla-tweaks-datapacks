@@ -1,5 +1,6 @@
 {
-    "values": [
-        "#main:init"
-    ]
+	"values": [
+		"custom_nether_portals:load",
+		"custom_nether_portals:tick"
+	]
 }
