@@ -1,0 +1,1 @@
+schedule clear anti_creeper_grief:second
