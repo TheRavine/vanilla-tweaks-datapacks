@@ -1,6 +1,6 @@
 # Desc: Prepends a trade to the wandering trader based on its trade index
 #
-# Called by: wt:tick
+# Called by: wandering_trades:tick
 
 # Trades
 execute if score @s wt_tradeIndex matches 2 run data modify entity @s Offers.Recipes prepend value {rewardExp:0b,maxUses:3,buy:{id:"minecraft:emerald",Count:1b},buyB:{id:"minecraft:air",Count:1b},sell:{id:"minecraft:player_head",Count:1b,tag:{display:{Name:"{\"text\":\"§r§ePythonGB\"}"},SkullOwner:{Id:[I;752957053,1223839369,-1214580653,633884771],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzA5M2YwNzc3NThjZjVmZTkyNGYxZWM1YWY5YzZiZGJiNzgwYTVjY2I2ZjEzNmFiMWFmNDc3NDIxZTcyM2Y0ZCJ9fX0="}]}}}}}
