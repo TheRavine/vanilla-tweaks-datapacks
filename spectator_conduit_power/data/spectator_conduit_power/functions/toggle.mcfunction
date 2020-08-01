@@ -1,6 +1,6 @@
 # Desc: Toggles Conduit Power on/off based on toggle value
 #
-# Called by: scp:tick
+# Called by: spectator_conduit_power:tick
 
 # Multiply by -1 to invert
 scoreboard players operation @s scp_toggle *= scp_toggle scp_toggle

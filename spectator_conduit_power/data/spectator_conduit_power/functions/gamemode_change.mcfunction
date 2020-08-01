@@ -1,6 +1,6 @@
 # Desc: Sets player into normal state
 #
-# Called by: scp:tick
+# Called by: spectator_conduit_power:tick
 
 effect clear @s conduit_power
 scoreboard players set @s scp_toggle -1

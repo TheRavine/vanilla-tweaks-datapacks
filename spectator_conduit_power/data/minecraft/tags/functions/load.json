@@ -1,5 +1,6 @@
 {
-    "values": [
-        "#main:init"
-    ]
+	"values": [
+		"spectator_conduit_power:load",
+		"spectator_conduit_power:tick"
+	]
 }
