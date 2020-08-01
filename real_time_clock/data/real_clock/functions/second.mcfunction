@@ -1,5 +1,7 @@
 # Controls everything to do with realtime clock
 
+schedule function real_clock:second 1s
+
 scoreboard players add #rc_time rc_seconds 1
 
 # 60 seconds -> minutes

@@ -1,5 +1,7 @@
 {
-    "values": [
-        "#main:init"
-    ]
+	"values": [
+		"real_clock:load",
+		"real_clock:tick",
+		"real_clock:second"
+	]
 }
