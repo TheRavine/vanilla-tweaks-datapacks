@@ -1,6 +1,6 @@
 # Desc: Sets player into normal state
 #
-# Called by: snv:tick
+# Called by: spectator_night_vision:tick
 
 effect clear @s night_vision
 scoreboard players set @s snv_toggle -1

@@ -1,6 +1,6 @@
 # Desc: Toggles night vision on/off based on toggle value
 #
-# Called by: snv:tick
+# Called by: spectator_night_vision:tick
 
 # Multiply by -1 to invert
 scoreboard players operation @s snv_toggle *= snv_toggle snv_toggle
