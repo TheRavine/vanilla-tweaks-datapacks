@@ -1,9 +1,9 @@
 tag @s add graves.player
 function graves:rotate/players
 execute store result score #id graves.dummy run data get storage graves:storage lastGrave
-data modify storage graves:storage players[0].graves append value {}
-execute store result storage graves:storage players[0].graves[-1].id int 1 run scoreboard players add #id graves.dummy 1
-data modify storage graves:storage players[0].graves[-1].dim set from entity @s Dimension
+data modify storage graves:storage players[-1].graves append value {}
+execute store result storage graves:storage players[-1].graves[-1].id int 1 run scoreboard players add #id graves.dummy 1
+data modify storage graves:storage players[-1].graves[-1].dim set from entity @s Dimension
 execute store result storage graves:storage lastGrave int 1 run scoreboard players get #id graves.dummy
 summon minecraft:armor_stand ~ ~ ~ {Tags:["graves.marker","graves.hitbox","graves.new"],Invisible:1b,NoGravity:1b,Invulnerable:1b,Small:1b,DisabledSlots:256,HandItems:[{id:"minecraft:stone_button",Count:1b,tag:{gravesData:{items:[]}}},{id:"minecraft:stone_button",Count:2b,tag:{gravesData:{}}}],Pose:{RightArm:[0.0f,-90.0f,0.0f],LeftArm:[0.0f,90.0f,0.0f],Head:[180.0f,0.0f,0.0f]},Silent:1b}
 data modify entity @e[type=minecraft:armor_stand,tag=graves.new,limit=1] HandItems[0].tag.gravesData.items set from entity @s Inventory

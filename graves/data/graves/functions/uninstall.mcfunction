@@ -10,3 +10,6 @@ data remove storage graves:storage temp
 execute in minecraft:overworld run gamerule keepInventory false
 execute in minecraft:the_nether run gamerule keepInventory false
 execute in minecraft:the_end run gamerule keepInventory false
+schedule clear graves:tick
+schedule clear graves:update_model
+schedule clear graves:check_game_rules

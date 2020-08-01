@@ -6,3 +6,4 @@ execute as @e[type=minecraft:armor_stand,tag=graves.hitbox] at @s if entity @a[g
 scoreboard players enable @a grave
 execute as @a[scores={grave=1}] run function graves:trigger_grave
 scoreboard players set @a graves.sneak 0
+schedule function graves:tick 1t
