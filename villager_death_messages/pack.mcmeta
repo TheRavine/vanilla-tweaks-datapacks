@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format":4,
-      "description":"Villager Death Messages"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"Villager Death Messages","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }
