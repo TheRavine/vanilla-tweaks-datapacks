@@ -1,5 +1,7 @@
 # Controls everything to do with datapack_name
 
+schedule function nether_portal_coords:tick 1t
+
 scoreboard players enable @a nc_inNether
 scoreboard players enable @a nc_inOverworld
 

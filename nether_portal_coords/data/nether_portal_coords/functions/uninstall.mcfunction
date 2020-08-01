@@ -1,5 +1,7 @@
 # Removes all scores required by the datapack
 
+schedule clear nether_portal_coords:tick
+
 scoreboard objectives remove nc_inOverworld
 scoreboard objectives remove nc_inNether
 
