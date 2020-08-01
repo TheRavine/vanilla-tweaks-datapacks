@@ -1,5 +1,6 @@
 {
-    "values": [
-        "#main:init"
-    ]
+	"values": [
+		"redstone_wrench:load",
+		"redstone_wrench:tick"
+	]
 }
