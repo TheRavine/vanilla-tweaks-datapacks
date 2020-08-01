@@ -1,6 +1,6 @@
 {
-   "pack":{
-      "pack_format":4,
-      "description":"Item averages"
-   }
+	"pack": {
+		"pack_format": 5,
+		"description": [{"text":"Item Averages","color":"gold"},{"text":"\nxisumavoid.com/vanillatweaks","color":"yellow"}]
+	}
 }
