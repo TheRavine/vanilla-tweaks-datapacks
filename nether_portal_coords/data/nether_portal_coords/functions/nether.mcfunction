@@ -8,7 +8,7 @@ scoreboard players operation @s nc_x *= #nc_constant nc_constant
 scoreboard players operation @s nc_z *= #nc_constant nc_constant
 
 # Print out portal coords for other dimension
-tellraw @s ["",{"text":"Overworld: ","color":"yellow"},{"text":"   ( X:","color":"yellow"},{"score":{"name":"@s","objective":"nc_x"},"color":"yellow"},{"text":" | Y:","color":"yellow"},{"score":{"name":"@s","objective":"nc_y"},"color":"yellow"},{"text":" | Z:","color":"yellow"},{"score":{"name":"@s","objective":"nc_z"},"color":"yellow"},{"text":" )","color":"yellow"}]
+tellraw @s ["",{"text":"Overworld   ","color":"yellow"},{"text":"[XYZ] ","color":"green"},{"score":{"name":"@s","objective":"nc_x"},"color":"gold"},{"text":" ","color":"gold"},{"score":{"name":"@s","objective":"nc_y"},"color":"gold"},{"text":" ","color":"gold"},{"score":{"name":"@s","objective":"nc_z"},"color":"gold"}]
 
 # Reset trigger
 scoreboard players set @s nc_inNether 0
