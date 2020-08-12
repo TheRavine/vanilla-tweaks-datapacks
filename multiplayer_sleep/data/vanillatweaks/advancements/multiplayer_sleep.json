@@ -3,8 +3,8 @@
 		"icon": {
 			"item": "minecraft:red_bed"
 		},
-		"title": "Multiplayer Sleep           ",
-		"description": ["",{"text":"Adds the ability for one player to sleep and skip the night in a multiplayer world.\n","color":"gold"},{"text":"Enter","color":"green"},{"text":" ","color":"gold"},{"text":"/scoreboard players set requiredPercent ms_count <percent>","color":"yellow"},{"text":" to set the required percent of overworld players that must sleep in your world.","color":"gold"}],
+		"title": "Multiplayer Sleep    ",
+		"description": ["",{"text":"Only a fraction of players in the overworld must sleep to skip the night and the rain.\n","color":"gold"},{"text":"Enter","color":"green"},{"text":" ","color":"gold"},{"text":"/trigger mpSleep","color":"yellow"},{"text":" for details and settings.\n","color":"gold"},{"text":"Enter","color":"green"},{"text":" ","color":"gold"},{"text":"/function multiplayer_sleep:config","color":"yellow"},{"text":" for config options.","color":"gold"}],
 		"show_toast": false,
 		"announce_to_chat": false
 	},

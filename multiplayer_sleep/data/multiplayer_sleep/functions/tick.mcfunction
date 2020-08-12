@@ -1,7 +1,6 @@
-# Checks for players who've triggered warn message
-#
-# Called by: main:tick
-
+scoreboard players enable @a mpSleep
+scoreboard players enable @a mpSleep.config
+execute as @a[scores={mpSleep=1..}] run function multiplayer_sleep:trigger
+execute if score #sleeping mpSleep.dummy matches 1.. run function multiplayer_sleep:check_sleeping
+execute if score #sleeping mpSleep.dummy matches -1 if predicate multiplayer_sleep:clear_day run scoreboard players set #sleeping mpSleep.dummy 0
 schedule function multiplayer_sleep:tick 1t
-
-execute as @a[scores={ms_warn=1}] at @s run function multiplayer_sleep:warn

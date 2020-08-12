@@ -1,16 +1,14 @@
-scoreboard objectives add ms_count dummy "Multiplayer Sleep Count"
-scoreboard objectives add ms_temp dummy "Multiplayer Sleep Temp"
-scoreboard players set 100 ms_count 100
-scoreboard players set 10000 ms_count 10000
-
-# 1 percent by default
-scoreboard players add requiredPercent ms_count 0
-execute if score requiredPercent ms_count matches 0 run scoreboard players set requiredPercent ms_count 1
-
-scoreboard objectives add ms_time dummy "Time of day"
-scoreboard objectives add ms_warnToggle dummy "Toggle Warn"
-scoreboard objectives add ms_warn trigger "Warn Sleeping Players"
-
-scoreboard players enable @a ms_warn
-scoreboard players set -1 ms_warnToggle -1
-scoreboard players set #ms_warnToggle ms_warnToggle 1
+scoreboard objectives add mpSleep.config trigger "Multiplayer Sleep Config"
+scoreboard objectives add mpSleep trigger "Multiplayer Sleep"
+scoreboard objectives add mpSleep.dummy dummy
+scoreboard objectives add mpSleep.sleep dummy
+scoreboard players set #total mpSleep.config 100
+execute unless score #percent mpSleep.config matches 0..100 run scoreboard players set #percent mpSleep.config 0
+execute unless score #display mpSleep.config matches 1..3 run scoreboard players set #display mpSleep.config 1
+bossbar add multiplayer_sleep:progress "Multiplayer Sleep Progress"
+bossbar add multiplayer_sleep:preview "Multiplayer Sleep Progress"
+bossbar set multiplayer_sleep:preview name "1 of 2 player(s) asleep"
+bossbar set multiplayer_sleep:preview visible true
+bossbar set multiplayer_sleep:preview value 1
+bossbar set multiplayer_sleep:preview max 2
+bossbar set multiplayer_sleep:preview players
