@@ -9,8 +9,13 @@ for arg in "$@"; do
   base_name=$(echo $arg | gsed -e 's/ v\([0-9]\.\)\+zip//;s/ /_/g')
   echo $base_name
   if [[ -d "$base_name" ]]; then
-    rm -rf $base_name
-    git restore $base_name/README.md
+    if [[ -f "$base_name/README.md" ]]; then
+      rm -rf "$base_name"
+      git restore "$base_name/README.md"
+    else
+      rm -rf "$base_name"
+      mkdir "$base_name"
+    fi
   else
     mkdir $base_name
   fi
