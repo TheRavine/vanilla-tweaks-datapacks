@@ -2,10 +2,10 @@
 	"display": {
 		"icon": {
 			"item": "minecraft:diamond_pickaxe",
-			"nbt": "{Damage:1560}"
+			"nbt": "{Damage:1405}"
 		},
-		"title": "Durability Ping   ",
-		"description": ["",{"text":"Alerts the player when their tool's durability is under 2%.\n","color":"gold"},{"text":"Enter","color":"green"},{"text":" ","color":"gold"},{"text":"/trigger dp_help","color":"yellow"},{"text":" for config.","color":"gold"}],
+		"title": "Durability Ping       ",
+		"description": ["",{"text":"Get notified when you damage an item with 10% or less durability.\n","color":"gold"},{"text":"Enter","color":"green"},{"text":" ","color":"gold"},{"text":"/trigger duraPing","color":"yellow"},{"text":" for personal settings.\n","color":"gold"},{"text":"Enter","color":"green"},{"text":" ","color":"gold"},{"text":"/function durability_ping:config","color":"yellow"},{"text":" for config options.","color":"gold"}],
 		"show_toast": false,
 		"announce_to_chat": false
 	},

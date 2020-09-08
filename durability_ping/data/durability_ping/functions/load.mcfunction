@@ -1,65 +1,73 @@
-# Initialises the datapack
-
-# Durability values when each tool is under roughly 2% of it's total
-scoreboard objectives add dp_durability dummy
-
-scoreboard players set #diamond dp_durability 1530
-scoreboard players set #iron dp_durability 245
-scoreboard players set #stone dp_durability 125
-scoreboard players set #wooden dp_durability 53
-scoreboard players set #golden dp_durability 30
-scoreboard players set #rod dp_durability 62
-scoreboard players set #flint dp_durability 62
-scoreboard players set #carrotOnStick dp_durability 23
-scoreboard players set #shears dp_durability 230
-scoreboard players set #shield dp_durability 330
-scoreboard players set #bow dp_durability 373
-scoreboard players set #trident dp_durability 240
-scoreboard players set #crossbow dp_durability 320
-
-
-# Cooldown scores per player
-scoreboard objectives add dp_diamondPick dummy
-scoreboard objectives add dp_diamondShov dummy
-scoreboard objectives add dp_diamondSword dummy
-scoreboard objectives add dp_diamondAxe dummy
-scoreboard objectives add dp_diamondHoe dummy
-
-scoreboard objectives add dp_goldenPick dummy
-scoreboard objectives add dp_goldenShov dummy
-scoreboard objectives add dp_goldenSword dummy
-scoreboard objectives add dp_goldenAxe dummy
-scoreboard objectives add dp_goldenHoe dummy
-
-scoreboard objectives add dp_woodenPick dummy
-scoreboard objectives add dp_woodenShov dummy
-scoreboard objectives add dp_woodenSword dummy
-scoreboard objectives add dp_woodenAxe dummy
-scoreboard objectives add dp_woodenHoe dummy
-
-scoreboard objectives add dp_ironPick dummy
-scoreboard objectives add dp_ironShov dummy
-scoreboard objectives add dp_ironSword dummy
-scoreboard objectives add dp_ironAxe dummy
-scoreboard objectives add dp_ironHoe dummy
-
-scoreboard objectives add dp_stonePick dummy
-scoreboard objectives add dp_stoneShov dummy
-scoreboard objectives add dp_stoneSword dummy
-scoreboard objectives add dp_stoneAxe dummy
-scoreboard objectives add dp_stoneHoe dummy
-
-scoreboard objectives add dp_rod dummy
-scoreboard objectives add dp_flint dummy
-scoreboard objectives add dp_carrotOnStick dummy
-scoreboard objectives add dp_shears dummy
-scoreboard objectives add dp_shield dummy
-scoreboard objectives add dp_bow dummy
-scoreboard objectives add dp_trident dummy
-scoreboard objectives add dp_crossbow dummy
-
-scoreboard objectives add dp_cooldown dummy
-scoreboard players add #cooldown dp_cooldown 0
-execute if score #cooldown dp_cooldown matches 0 run scoreboard players set #cooldown dp_cooldown 60
-
-scoreboard objectives add dp_help trigger ["show durability ping help"]
+scoreboard objectives add duraPing.config dummy "Durability Ping Config"
+scoreboard objectives add duraPing.dummy dummy
+scoreboard objectives add duraPing trigger "Durability Ping"
+scoreboard objectives add duraPing.weapon dummy
+scoreboard objectives add duraPing.armor dummy
+scoreboard players set #10 duraPing.dummy 10
+scoreboard players set #100 duraPing.dummy 100
+execute unless score #default duraPing.config matches 0.. run scoreboard players set #default duraPing.config 11
+advancement revoke @a only durability_ping:damage/turtle_helmet
+advancement revoke @a only durability_ping:damage/flint_and_steel
+advancement revoke @a only durability_ping:damage/bow
+advancement revoke @a only durability_ping:damage/wooden_sword
+advancement revoke @a only durability_ping:damage/wooden_shovel
+advancement revoke @a only durability_ping:damage/wooden_pickaxe
+advancement revoke @a only durability_ping:damage/wooden_axe
+advancement revoke @a only durability_ping:damage/wooden_hoe
+advancement revoke @a only durability_ping:damage/stone_sword
+advancement revoke @a only durability_ping:damage/stone_shovel
+advancement revoke @a only durability_ping:damage/stone_pickaxe
+advancement revoke @a only durability_ping:damage/stone_axe
+advancement revoke @a only durability_ping:damage/stone_hoe
+advancement revoke @a only durability_ping:damage/golden_sword
+advancement revoke @a only durability_ping:damage/golden_shovel
+advancement revoke @a only durability_ping:damage/golden_pickaxe
+advancement revoke @a only durability_ping:damage/golden_axe
+advancement revoke @a only durability_ping:damage/golden_hoe
+advancement revoke @a only durability_ping:damage/iron_sword
+advancement revoke @a only durability_ping:damage/iron_shovel
+advancement revoke @a only durability_ping:damage/iron_pickaxe
+advancement revoke @a only durability_ping:damage/iron_axe
+advancement revoke @a only durability_ping:damage/iron_hoe
+advancement revoke @a only durability_ping:damage/diamond_sword
+advancement revoke @a only durability_ping:damage/diamond_shovel
+advancement revoke @a only durability_ping:damage/diamond_pickaxe
+advancement revoke @a only durability_ping:damage/diamond_axe
+advancement revoke @a only durability_ping:damage/diamond_hoe
+advancement revoke @a only durability_ping:damage/netherite_sword
+advancement revoke @a only durability_ping:damage/netherite_shovel
+advancement revoke @a only durability_ping:damage/netherite_pickaxe
+advancement revoke @a only durability_ping:damage/netherite_axe
+advancement revoke @a only durability_ping:damage/netherite_hoe
+advancement revoke @a only durability_ping:damage/leather_helmet
+advancement revoke @a only durability_ping:damage/leather_chestplate
+advancement revoke @a only durability_ping:damage/leather_leggings
+advancement revoke @a only durability_ping:damage/leather_boots
+advancement revoke @a only durability_ping:damage/chainmail_helmet
+advancement revoke @a only durability_ping:damage/chainmail_chestplate
+advancement revoke @a only durability_ping:damage/chainmail_leggings
+advancement revoke @a only durability_ping:damage/chainmail_boots
+advancement revoke @a only durability_ping:damage/iron_helmet
+advancement revoke @a only durability_ping:damage/iron_chestplate
+advancement revoke @a only durability_ping:damage/iron_leggings
+advancement revoke @a only durability_ping:damage/iron_boots
+advancement revoke @a only durability_ping:damage/diamond_helmet
+advancement revoke @a only durability_ping:damage/diamond_chestplate
+advancement revoke @a only durability_ping:damage/diamond_leggings
+advancement revoke @a only durability_ping:damage/diamond_boots
+advancement revoke @a only durability_ping:damage/golden_helmet
+advancement revoke @a only durability_ping:damage/golden_chestplate
+advancement revoke @a only durability_ping:damage/golden_leggings
+advancement revoke @a only durability_ping:damage/golden_boots
+advancement revoke @a only durability_ping:damage/netherite_helmet
+advancement revoke @a only durability_ping:damage/netherite_chestplate
+advancement revoke @a only durability_ping:damage/netherite_leggings
+advancement revoke @a only durability_ping:damage/netherite_boots
+advancement revoke @a only durability_ping:damage/fishing_rod
+advancement revoke @a only durability_ping:damage/shears
+advancement revoke @a only durability_ping:damage/carrot_on_a_stick
+advancement revoke @a only durability_ping:damage/warped_fungus_on_a_stick
+advancement revoke @a only durability_ping:damage/shield
+advancement revoke @a only durability_ping:damage/elytra
+advancement revoke @a only durability_ping:damage/trident
+advancement revoke @a only durability_ping:damage/crossbow
