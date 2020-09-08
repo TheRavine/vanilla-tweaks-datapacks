@@ -1,8 +1,1 @@
-{
-	"values": [
-		"graves:load",
-		"graves:tick",
-		"graves:update_model",
-		"graves:check_game_rules"
-	]
-}
+{"replace":false,"values":["graves:load","graves:tick","graves:schedule","graves:update_model"]}
