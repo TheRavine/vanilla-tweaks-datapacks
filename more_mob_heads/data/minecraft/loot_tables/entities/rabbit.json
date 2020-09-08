@@ -18,11 +18,6 @@
           "conditions": [
             {
               "condition": "killed_by_player"
-            },
-            {
-              "condition": "random_chance_with_looting",
-              "chance": 0.10,
-              "looting_multiplier": 0.05
             }
           ],
           "children": [
@@ -42,6 +37,11 @@
                     "nbt": "{CustomName:\"{\\\"text\\\":\\\"Toast\\\"}\"}"
                   },
                   "entity": "this"
+                },
+                {
+                  "condition": "random_chance_with_looting",
+                  "chance": 1.0,
+                  "looting_multiplier": 0.05
                 }
               ]
             },
@@ -61,6 +61,11 @@
                     "nbt": "{RabbitType:0}"
                   },
                   "entity": "this"
+                },
+                {
+                  "condition": "random_chance_with_looting",
+                  "chance": 0.26,
+                  "looting_multiplier": 0.05
                 }
               ]
             },
@@ -80,6 +85,11 @@
                     "nbt": "{RabbitType:1}"
                   },
                   "entity": "this"
+                },
+                {
+                  "condition": "random_chance_with_looting",
+                  "chance": 0.26,
+                  "looting_multiplier": 0.05
                 }
               ]
             },
@@ -99,6 +109,11 @@
                     "nbt": "{RabbitType:2}"
                   },
                   "entity": "this"
+                },
+                {
+                  "condition": "random_chance_with_looting",
+                  "chance": 0.26,
+                  "looting_multiplier": 0.05
                 }
               ]
             },
@@ -118,6 +133,11 @@
                     "nbt": "{RabbitType:3}"
                   },
                   "entity": "this"
+                },
+                {
+                  "condition": "random_chance_with_looting",
+                  "chance": 0.26,
+                  "looting_multiplier": 0.05
                 }
               ]
             },
@@ -137,6 +157,11 @@
                     "nbt": "{RabbitType:4}"
                   },
                   "entity": "this"
+                },
+                {
+                  "condition": "random_chance_with_looting",
+                  "chance": 0.26,
+                  "looting_multiplier": 0.05
                 }
               ]
             },
@@ -156,6 +181,11 @@
                     "nbt": "{RabbitType:5}"
                   },
                   "entity": "this"
+                },
+                {
+                  "condition": "random_chance_with_looting",
+                  "chance": 0.26,
+                  "looting_multiplier": 0.05
                 }
               ]
             },
@@ -175,6 +205,11 @@
                     "nbt": "{RabbitType:99}"
                   },
                   "entity": "this"
+                },
+                {
+                  "condition": "random_chance_with_looting",
+                  "chance": 1.0,
+                  "looting_multiplier": 0.05
                 }
               ]
             }
