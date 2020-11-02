@@ -4,9 +4,14 @@ set -euo pipefail
 
 MINECRAFT_VERSION="1.16"
 
+SED=sed
+if which gsed &>/dev/null; then
+  SED=gsed
+fi
+
 for arg in "$@"; do
-  version=$(echo $arg | gsed -e 's/.\+ v\([0-9]\(\.[0-9]\)\+\)\.\+zip/\1/')
-  base_name=$(echo $arg | gsed -e 's/ v\([0-9]\.\)\+zip//;s/ /_/g')
+  version=$(echo $arg | "$SED" -e 's/.\+ v\([0-9]\(\.[0-9]\)\+\)\.\+zip/\1/')
+  base_name=$(echo $arg | "$SED" -e 's/ v\([0-9]\.\)\+zip//;s/ /_/g')
   echo $base_name
   if [[ -d "$base_name" ]]; then
     if [[ -f "$base_name/README.md" ]]; then
