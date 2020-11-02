@@ -1,0 +1,5 @@
+schedule clear confetti_creepers:tick
+schedule clear confetti_creepers:check_trigger
+schedule clear confetti_creepers:give_effects
+scoreboard objectives remove cftCreep
+scoreboard objectives remove cftCreep.config
