@@ -17,7 +17,7 @@
 					"max": 1
 				},
 				"item": {
-					"item": "minecraft:elytra",
+					"items": ["minecraft:elytra"],
 					"nbt": "{armElyData:{armored:1b}}"
 				}
 			}

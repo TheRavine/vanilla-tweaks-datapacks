@@ -4,5 +4,5 @@ data modify storage armored_elytra:storage item set from entity @s Inventory[{Sl
 data modify storage armored_elytra:storage item.tag.Damage set value 431
 function armored_elytra:separate_enchantments/start
 execute as @e[type=minecraft:item,tag=armEly.separated] run function armored_elytra:set_owner
-replaceitem entity @s armor.chest minecraft:air
+item replace entity @s armor.chest with minecraft:air
 tag @s remove armEly.subject
