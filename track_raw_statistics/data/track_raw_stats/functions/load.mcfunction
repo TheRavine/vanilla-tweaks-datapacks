@@ -32,7 +32,7 @@ scoreboard objectives add ts_MobKills minecraft.custom:minecraft.mob_kills "Mob 
 scoreboard objectives add ts_PlayNoteblock minecraft.custom:minecraft.play_noteblock "Play Noteblock"
 scoreboard objectives add ts_TuneNoteblock minecraft.custom:minecraft.tune_noteblock "Tune Noteblock"
 scoreboard objectives add ts_PigRide minecraft.custom:minecraft.pig_one_cm "Pig Ride"
-scoreboard objectives add ts_PlayedMinutes minecraft.custom:minecraft.play_one_minute "Played Minutes"
+scoreboard objectives add ts_PlayTime minecraft.custom:minecraft.play_time "Play Time"
 scoreboard objectives add ts_PlayerKills minecraft.custom:minecraft.player_kills "Player Kills"
 scoreboard objectives add ts_RecordsPlayed minecraft.custom:minecraft.play_record "Records Played"
 scoreboard objectives add ts_ShulkerBox minecraft.custom:minecraft.open_shulker_box "Shulker Box"
@@ -93,6 +93,7 @@ scoreboard objectives add ts_BreakShears minecraft.broken:minecraft.shears "Brea
 #
 # Mined
 #
+scoreboard objectives add ts_MineCoal minecraft.mined:minecraft.coal_ore "Mine Coal"
 scoreboard objectives add ts_MineDiamond minecraft.mined:minecraft.diamond_ore "Mine Diamond"
 scoreboard objectives add ts_MineEmerald minecraft.mined:minecraft.emerald_ore "Mine Emerald"
 scoreboard objectives add ts_MineQuartz minecraft.mined:minecraft.nether_quartz_ore "Mine Quartz"
@@ -100,7 +101,17 @@ scoreboard objectives add ts_MineRedstone minecraft.mined:minecraft.redstone_ore
 scoreboard objectives add ts_MineLapis minecraft.mined:minecraft.lapis_ore "Mine Lapis"
 scoreboard objectives add ts_MineIron minecraft.mined:minecraft.iron_ore "Mine Iron"
 scoreboard objectives add ts_MineGold minecraft.mined:minecraft.gold_ore "Mine Gold"
+scoreboard objectives add ts_MineCopper minecraft.mined:minecraft.copper_ore "Mine Copper"
 scoreboard objectives add ts_MineNetherite minecraft.mined:minecraft.ancient_debris "Mine Ancient Debris"
+
+scoreboard objectives add ts_MineDCoal minecraft.mined:minecraft.deepslate_coal_ore "Mine Deepslate Coal"
+scoreboard objectives add ts_MineDDiamond minecraft.mined:minecraft.deepslate_diamond_ore "Mine Deepslate Diamond"
+scoreboard objectives add ts_MineDEmerald minecraft.mined:minecraft.deepslate_emerald_ore "Mine Deepslate Emerald"
+scoreboard objectives add ts_MineDRedstone minecraft.mined:minecraft.deepslate_redstone_ore "Mine Deepslate Redstone"
+scoreboard objectives add ts_MineDLapis minecraft.mined:minecraft.deepslate_lapis_ore "Mine Deepslate Lapis"
+scoreboard objectives add ts_MineDIron minecraft.mined:minecraft.deepslate_iron_ore "Mine Deepslate Iron"
+scoreboard objectives add ts_MineDGold minecraft.mined:minecraft.deepslate_gold_ore "Mine Deepslate Gold"
+scoreboard objectives add ts_MineDCopper minecraft.mined:minecraft.deepslate_copper_ore "Mine Deepslate Copper"
 
 #
 # Kill
@@ -173,6 +184,9 @@ scoreboard objectives add ts_KillFox minecraft.killed:minecraft.fox "Kill Fox"
 scoreboard objectives add ts_KillPanda minecraft.killed:minecraft.panda "Kill Panda"
 scoreboard objectives add ts_KillPillager minecraft.killed:minecraft.pillager "Kill Pillager"
 scoreboard objectives add ts_KillRavager minecraft.killed:minecraft.ravager "Kill Ravager"
+scoreboard objectives add ts_KillGlowSquid minecraft.killed:minecraft.glow_squid "Kill Glow Squid"
+scoreboard objectives add ts_KillAxolotl minecraft.killed:minecraft.axolotl "Kill Axolotl"
+scoreboard objectives add ts_KillGoat minecraft.killed:minecraft.goat "Kill Goat"
 
 #
 # Killed by
