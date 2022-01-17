@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-MINECRAFT_VERSION="1.16"
+MINECRAFT_VERSION="1.18"
 
 SED=sed
 if which gsed &>/dev/null; then
