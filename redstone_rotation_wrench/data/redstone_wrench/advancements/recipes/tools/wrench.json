@@ -6,7 +6,7 @@
 			"conditions": {
 				"items": [
 					{
-						"item": "minecraft:iron_ingot"
+						"items": ["minecraft:iron_ingot"]
 					}
 				]
 			}
@@ -16,7 +16,7 @@
 			"conditions": {
 				"items": [
 					{
-						"item": "minecraft:gold_ingot"
+						"items": ["minecraft:gold_ingot"]
 					}
 				]
 			}
