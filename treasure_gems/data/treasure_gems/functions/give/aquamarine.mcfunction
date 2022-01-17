@@ -1,1 +1,1 @@
-give @s minecraft:player_head{display: {Name: "[\"\",{\"text\":\"Aquamarine Gem\",\"color\":\"yellow\",\"italic\":false}]"},SkullOwner: {Id:[I;-1447408671,1641234977,-2097543137,-1000218569],Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmE5ZTI4ZmFiN2QzZDAxMWJjODRiZjE2ZGFmMmY5NThhOGI4OGIwNmUwZDVlNTBjMjU0NDdiNWRmNGM2MGI3YyJ9fX0="}]}}}
+loot give @s loot treasure_gems:gem/aquamarine
