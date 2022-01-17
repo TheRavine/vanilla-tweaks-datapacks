@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 6,
+		"pack_format": 8,
 		"description": [{"text":"Real-time Clock","color":"gold"},{"text":"\nvanillatweaks.net","color":"yellow"}]
 	}
 }
