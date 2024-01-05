@@ -1,5 +1,5 @@
 {
-	"condition": "minecraft:alternative",
+	"condition": "minecraft:any_of",
 	"terms": [
 		{
 			"condition": "minecraft:inverted",
@@ -24,7 +24,7 @@
 						"minecraft:snow"
 					],
 					"state": {
-						"layers": 1
+						"layers": "1"
 					}
 				}
 			}
@@ -45,7 +45,7 @@
 						"minecraft:bubble_column"
 					],
 					"state": {
-						"drag": true
+						"drag": "true"
 					}
 				}
 			}
