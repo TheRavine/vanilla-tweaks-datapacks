@@ -1,0 +1,17 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:name_tag"
+		},
+		"title": "Name Colors    ",
+		"description": ["",{"text":"Enter","color":"green"},{"text":" ","color":"gold"},{"text":"/trigger color","color":"yellow"},{"text":" to list the colors you can set your username to.","color":"gold"}],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+    "parent": "vanillatweaks:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
