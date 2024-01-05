@@ -13,20 +13,23 @@
 		"player_interacted_with_entity": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"location": {
-					"block": {
-						"blocks": ["minecraft:enchanting_table"]
-					}
-				},
-				"item": {
-					"items": ["minecraft:glass_bottle"]
-				},
-				"player": [
+				"location": [
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"items": ["minecraft:glass_bottle"]
+						}
+					},
+					{
+						"condition": "minecraft:block_state_property",
+						"block": "minecraft:enchanting_table"
+					},
 					{
 						"condition": "minecraft:entity_properties",
 						"entity": "this",
 						"predicate": {
-							"player": {
+							"type_specific": {
+								"type": "player",
 								"level": {
 									"min": 1
 								}
