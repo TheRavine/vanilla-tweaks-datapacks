@@ -4,9 +4,9 @@
 		"block": {
 			"tag": "minecraft:leaves",
 			"state": {
-				"persistent": false,
+				"persistent": "false",
 				"distance": {
-					"min": 6
+					"min": "6"
 				}
 			}
 		}
