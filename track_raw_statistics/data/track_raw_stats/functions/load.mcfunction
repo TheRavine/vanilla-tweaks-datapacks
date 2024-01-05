@@ -187,6 +187,9 @@ scoreboard objectives add ts_KillRavager minecraft.killed:minecraft.ravager "Kil
 scoreboard objectives add ts_KillGlowSquid minecraft.killed:minecraft.glow_squid "Kill Glow Squid"
 scoreboard objectives add ts_KillAxolotl minecraft.killed:minecraft.axolotl "Kill Axolotl"
 scoreboard objectives add ts_KillGoat minecraft.killed:minecraft.goat "Kill Goat"
+scoreboard objectives add ts_KillWarden minecraft.killed:minecraft.warden "Kill Warden"
+scoreboard objectives add ts_KillCamel minecraft.killed:minecraft.camel "Kill Camel"
+scoreboard objectives add ts_KillSniffer minecraft.killed:minecraft.sniffer "Kill Sniffer"
 
 #
 # Killed by
@@ -244,3 +247,4 @@ scoreboard objectives add ts_DthFox minecraft.killed_by:minecraft.fox "Killed by
 scoreboard objectives add ts_DthPanda minecraft.killed_by:minecraft.panda "Killed by Panda"
 scoreboard objectives add ts_DthPillager minecraft.killed_by:minecraft.pillager "Killed by Pillager"
 scoreboard objectives add ts_DthRavager minecraft.killed_by:minecraft.ravager "Killed by Ravager"
+scoreboard objectives add ts_DthWarden minecraft.killed_by:minecraft.warden "Killed by Warden"
