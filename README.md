@@ -12,6 +12,8 @@ There is a branch for each Minecraft version:
 - [minecraft-1.14](https://github.com/belak/vanilla-tweaks-datapacks/tree/minecraft-1.14)
 - [minecraft-1.15](https://github.com/belak/vanilla-tweaks-datapacks/tree/minecraft-1.15)
 - [minecraft-1.16](https://github.com/belak/vanilla-tweaks-datapacks/tree/minecraft-1.16)
+- [minecraft-1.18](https://github.com/belak/vanilla-tweaks-datapacks/tree/minecraft-1.18)
+- [minecraft-1.20](https://github.com/belak/vanilla-tweaks-datapacks/tree/minecraft-1.20)
 
 The default branch will always track the latest supported Minecraft version.
 

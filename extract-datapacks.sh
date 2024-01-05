@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-MINECRAFT_VERSION="1.18"
+MINECRAFT_VERSION="1.20"
 
 SED=sed
 if which gsed &>/dev/null; then
@@ -10,9 +10,9 @@ if which gsed &>/dev/null; then
 fi
 
 for arg in "$@"; do
-  version=$(echo $arg | "$SED" -e 's/.\+ v\([0-9]\(\.[0-9]\)\+\)\.\+zip/\1/')
-  base_name=$(echo $arg | "$SED" -e 's/ v\([0-9]\.\)\+zip//;s/ /_/g')
-  echo $base_name
+  version=$(echo $arg | "$SED" -re 's/.\+ v\([0-9]\(\.[0-9]\)\+\)\.\+zip/\1/')
+  base_name=$(echo $arg | "$SED" -re 's/ v\([0-9]\.\)\+zip//;s/ /_/g')
+  echo "$base_name ($version)"
   if [[ -d "$base_name" ]]; then
     if [[ -f "$base_name/README.md" ]]; then
       rm -rf "$base_name"
