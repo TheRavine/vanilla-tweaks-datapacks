@@ -4,7 +4,7 @@
 
 # Hermit Heads index
 scoreboard players set @s math_input1 2
-scoreboard players set @s math_input2 19
+scoreboard players set @s math_input2 20
 
 # Count trade as added if it is unique, else try again
 scoreboard players add @s wt_trades 0
